@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="js25.css" />
+		<script src="js25.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="tree" id="tree">
+			<div class="select"><input type="text" /><span>查询</span></div>
+			<div class="folder child_show">
+				<label><span class="show_hide">-</span><span class="filename">语言类</span><span class="add">+</span></label>
+				<div>
+					<div class="folder child_show">
+						<label><span class="show_hide">-</span><span class="filename">服务器语言</span><span class="delete">-</span><span class="add">+</span></label>
+						<div>
+							<div class="file">
+								<label><span class="filename">c语言详解.txt</span><span class="delete">-</span></label>
+							</div>
+							<div class="file">
+								<label><span class="filename">php语言详解.txt</span><span class="delete">-</span></label>
+							</div>
+							<div class="folder child_show">
+								<label><span class="show_hide">-</span><span class="filename">其他语言</span><span class="delete">-</span><span class="add">+</span></label>
+								<div>
+									<div class="file">
+										<label><span class="filename">java语言详解.txt</span><span class="delete">-</span></label>
+									</div>
+									<div class="file">
+										<label><span class="filename">asp语言详解.txt</span><span class="delete">-</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="folder child_show">
+						<label><span class="show_hide">-</span><span class="filename">脚本语言</span><span class="delete">-</span><span class="add">+</span></label>
+						<div></div>
+					</div>
+					<div class="folder child_show">
+						<label><span class="show_hide">-</span><span class="filename">web语言</span><span class="delete">-</span><span class="add">+</span></label>
+						<div></div>
+					</div>
+					<div class="file">
+						<label><span class="filename">readme.txt</span><span class="delete">-</span></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pop">
+			<div class="pop_up_layer"></div>
+			<div class="notes">
+				<div class="t_content">
+					<span class="title">请选择输入你要添加的文件名和选择文件类型</span>
+					<div class="content">
+						<div><span>文件名:</span><input type="text" /></div>
+						<div>
+							<span>类型:</span>
+							<select name="" id="">
+								<option value="1">文件</option>
+								<option value="2">文件夹</option>
+							</select>
+						</div>
+						<input type='hidden' value=""/>
+					</div>
+					<div class="footer">
+						<span class="ok">确定</span>
+						<span class="cancel">取消</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

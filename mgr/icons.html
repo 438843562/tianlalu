@@ -1,0 +1,1463 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="utf-8">
+    <!-- 初始网页宽度为设置屏幕宽度，缩放级别为1.0，禁止用户缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- 设置360等双内核的浏览器渲染模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- 设置IE支持的最高模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!-- 禁止移动浏览器转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 网站标志 -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+    <title>Yun+后台主题UI | Font Awesome图标</title>
+    <!-- 网站描述 -->
+    <meta name="description" content="Yun+是一个完全响应式的后台主题UI框架，基于Boostrap CSS框架，jQuery框架等各种开源前端框架开发的HTML5+CSS3前端主题UI框架，提供各种强大的常用UI组件，您可以基于此框架应用于您的网站开发，如网站后台，会员中心，论坛，CMS等等。">
+    <!-- 网站SEO关键词 -->
+    <meta name="keywords" content="Yun+UI,云+主题,云加后台主题UI,响应式的后台主题,Boostrap主题框架">
+    
+    <!-- 引入Bootstrap CSS框架 awesome字体-->
+    <link href="Css/bootstrap.min.css" rel="stylesheet">
+    <link href="Css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS动画框架 -->
+    <link href="Css/animate.css" rel="stylesheet">
+    <!-- Yun+ UI css主文件 -->
+    <link href="Css/west263.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 侧边导航菜单 开始 -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img class="img-circle" src="Picture/profile_small.jpg" alt="image"></span>
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">Yun+ UI</strong>
+                                    </span>
+                                </span>
+                                <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">项目</a></li>
+                                <li><a href="contacts.html">联系我们</a></li>
+                                <li><a href="mailbox.html">信箱</li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">YUN+</div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-tabel">主面板</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="index.html">主面板</a></li><li><a href="dashboard_1.html">主面板示例一</a></li>
+                            <li><a href="dashboard_2.html">主面板示例二</a></li>
+                            <li><a href="dashboard_3.html">主面板示例三</a></li>
+                            <li><a href="dashboard_4.html">主面板示例四</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="layouts.html">
+                            <i class="fa fa-diamond"></i>
+                            <span class="nav-label">布局</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span class="nav-label">图表</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="graph_flot.html">Flot</a></li>
+                            <li><a href="graph_morris.html">Morris</a></li>
+                            <li><a href="graph_rickshaw.html">Rickshaw</a></li>
+                            <li><a href="graph_chartjs.html">Chart</a></li>
+                            <li><a href="graph_chartist.html">Chartist</a></li>
+                            <li><a href="graph_peity.html">Peity</a></li>
+                            <li><a href="graph_sparkline.html">Sparkline</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox.html">
+                            <i class="fa fa-envelope"></i>
+                            <span class="nav-label">信箱</span>
+                            <span class="label label-warning pull-right">16/24</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="mailbox.html">收件箱</a></li>
+                            <li><a href="mail_detail.html">查看邮件</a></li>
+                            <li><a href="mail_compose.html">写信</a></li>
+                            <li><a href="mail_template.html">邮件模板</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="metrics.html">
+                            <i class="fa fa-pie-chart"></i>
+                            <span class="nav-label">Metrics 图表</span>
+                            <span class="label label-primary pull-right">新</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">小部件</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <i class="fa fa-edit"></i>
+                            <span class="nav-label">表单</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="form_basic.html">基本表单</a></li>
+                            <li><a href="form_advanced.html">高级插件</a></li>
+                            <li><a href="form_wizard.html">表单向导</a></li>
+                            <li><a href="form_file_upload.html">文件上传</a></li>
+                            <li><a href="form_editors.html">文本编辑</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <i class="fa fa-desktop"></i>
+                            <span class="nav-label">App 页面</span>
+                            <span class="pull-right label label-primary">专用</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="contacts.html">联系人</a></li>
+                            <li><a href="profile.html">个人资料</a></li>
+                            <li><a href="project.html">项目</a></li>
+                            <li><a href="project_detail.html">项目详情</a></li>
+                            <li><a href="teams_board.html">小组</a></li>
+                            <li><a href="social_feed.html">社交管理</a></li>
+                            <li><a href="clients.html">客户管理</a></li>
+                            <li><a href="full_height.html">邮件阅读</a></li>
+                            <li><a href="file_manager.html">文件管理</a></li>
+                            <li><a href="calendar.html">日历</a></li>
+                            <li><a href="issue_tracker.html">问题跟踪</a></li>
+                            <li><a href="blog.html">博客</a></li>
+                            <li><a href="article.html">文章</a></li>
+                            <li><a href="faq.html">帮助中心</a></li>
+                            <li><a href="timeline.html">时间轴</a></li>
+                            <li><a href="pin_board.html">标签墙</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-files-o"></i>
+                            <span class="nav-label">其它页面</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="search_results.html">搜索页面</a></li>
+                            <li><a href="lockscreen.html">屏锁</a></li>
+                            <li><a href="invoice.html">票据</a></li>
+                            <li><a href="login.html">登录页面</a></li>
+                            <li><a href="login_two_columns.html">登录页面 v.2</a></li>
+                            <li><a href="forgot_password.html">找回密码</a></li>
+                            <li><a href="register.html">注册页面</a></li>
+                            <li><a href="404.html">404 页面</a></li>
+                            <li><a href="500.html">500 页面</a></li>
+                            <li><a href="empty_page.html">空白页面</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-globe"></i>
+                            <span class="nav-label">各种页面</span>
+                            <span class="label label-info pull-right">新</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="toastr_notifications.html">通知</a></li>
+                            <li><a href="nestable_list.html">折叠列表</a></li>
+                            <li><a href="agile_board.html">任务清单</a></li>
+                            <li><a href="timeline_2.html">时间轴 v.2</a></li>
+                            <li><a href="diff.html">文本对比</a></li>
+                            <li><a href="sweetalert.html">SweetAlert对话框</a></li>
+                            <li><a href="idle_timer.html">Idle timer</a></li>
+                            <li><a href="spinners.html">加载动画</a></li>
+                            <li><a href="tinycon.html">Live favicon</a></li>
+                            <li><a href="code_editor.html">代码编辑</a></li>
+                            <li><a href="modal_window.html">模态框</a></li>
+                            <li><a href="forum_main.html">论坛</a></li>
+                            <li><a href="validation.html">输入验证</a></li>
+                            <li><a href="tree_view.html">树形视图</a></li>
+                            <li><a href="chat_view.html">聊天视图</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">UI元素</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="typography.html">排版</a></li>
+                            <li class="active"><a href="icons.html">图标</a></li>
+                            <li><a href="draggable_panels.html">拖动面板</a></li>
+                            <li><a href="buttons.html">按钮</a></li>
+                            <li><a href="video.html">视频</a></li>
+                            <li><a href="tabs_panels.html">面板</a></li>
+                            <li><a href="tabs.html">选项卡</a></li>
+                            <li><a href="notifications.html">通知 & 提示</a></li>
+                            <li><a href="badges_labels.html">徽章, 标签, 进度条</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">栅格</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-table"></i>
+                            <span class="nav-label">表格</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="table_basic.html">基本表格</a></li>
+                            <li><a href="table_data_tables.html">DataTables</a></li>
+                            <li><a href="table_foo_table.html">FooTables</a></li>
+                            <li><a href="jq_grid.html">jqGrid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="nav-label">电子商城</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="ecommerce_products_grid.html">产品展示</a></li>
+                            <li><a href="ecommerce_product_list.html">产品列表</a></li>
+                            <li><a href="ecommerce_product.html">产品编辑</a></li>
+                            <li><a href="ecommerce-orders.html">订单</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-picture-o"></i>
+                            <span class="nav-label">相册</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="basic_gallery.html">基本图库</a></li>
+                            <li><a href="carousel.html">图片切换</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sitemap"></i>
+                            <span class="nav-label">菜单</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">二级菜单项</a></li>
+                            <li>
+                                <a href="#">三级菜单 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="#">三级菜单项</a></li>
+                                    <li><a href="#">三级菜单项</a></li>
+                                    <li><a href="#">三级菜单项</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="css_animation.html">
+                            <i class="fa fa-magic"></i>
+                            <span class="nav-label">CSS 动画</span>
+                            <span class="label label-info pull-right">62</span>
+                        </a>
+                    </li>
+                    <li class="landing_link">
+                        <a target="_blank" href="landing.html">
+                            <i class="fa fa-star"></i>
+                            <span class="nav-label">载入页面</span>
+                            <span class="label label-warning pull-right">新</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>                
+        </nav><!-- 侧边导航菜单 结束 -->
+
+        <!-- 右侧内容 开始 -->
+        <div class="gray-bg" id="page-wrapper">
+            <!-- 右侧顶部导航div 开始 -->
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i>
+                        </a>
+                        <form class="navbar-form-custom" action="search_results.html" role="search">
+                            <div class="form-group">
+                                <input class="form-control" id="top-search" name="top-search" type="text" placeholder="请输入您要查找的内容……">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li><span class="m-r-sm text-muted welcome-message">欢迎来到 YUN+ 后台UI主题</span></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="pull-left" href="profile.html">
+                                            <img class="img-circle" src="Picture/a7.jpg" alt="image">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46h前</small>
+                                            <strong>国民老公</strong>又在微博放料啦，某某女演员……<br>
+                                            <small class="text-muted">3 前 7:58 下午 - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="Picture/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">5小时前</small>
+                                            <strong>股票大跌</strong> 小马哥不再是首富了。 <strong>———来自财经网</strong>. <br>
+                                            <small class="text-muted">昨天 1:21 下午 - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="Picture/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right">23小时前</small>
+                                            <strong>风姐</strong> 爱上 <strong>小马哥啦！</strong>. <br>
+                                            <small class="text-muted">2天前 2:30 上午 - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i> <strong>查看全部消息</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                                <i class="fa fa-bell"></i>
+                                <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 你有8条未读消息
+                                            <span class="pull-right text-muted small">4 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="grid_options.html">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> 服务器重启
+                                            <span class="pull-right text-muted small">4 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看全部提醒</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- 右侧顶部导航div 结束 -->
+
+            <!-- 右侧内容div .wrapper 开始 -->
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Font Awesome图标</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a>UI 元素</a></li>
+                        <li class="active"><strong>Font Awesome图标</strong></li>
+                    </ol>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <h2>Font Awesome 4.3.0</h2>
+                            是一套完美的图标字体,主要目的是和 Bootstrap 搭配使用... 
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>全部图标 <small class="m-l-sm">查看最新全部图标 - <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> </small></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="icons.html#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="icons.html#">选项 1</a>
+                                    </li>
+                                    <li><a href="icons.html#">选项 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content icons-box">
+
+
+
+                        <div>
+                            <h3> 4.3.0 新增的图标 </h3>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-angellist"></i> fa-angellist</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-area-chart"></i> fa-area-chart</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-at"></i> fa-at</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-bell-slash"></i> fa-bell-slash</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-bell-slash-o"></i> fa-bell-slash-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-bicycle"></i> fa-bicycle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-binoculars"></i> fa-binoculars</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-birthday-cake"></i> fa-birthday-cake</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-bus"></i> fa-bus</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-calculator"></i> fa-calculator</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-cc"></i> fa-cc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-cc-amex"></i> fa-cc-amex</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-cc-discover"></i> fa-cc-discover</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-cc-mastercard"></i> fa-cc-mastercard</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-cc-paypal"></i> fa-cc-paypal</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-cc-stripe"></i> fa-cc-stripe</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-cc-visa"></i> fa-cc-visa</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-copyright"></i> fa-copyright</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-eyedropper"></i> fa-eyedropper</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-futbol-o"></i> fa-futbol-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-google-wallet"></i> fa-google-wallet</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-ils"></i> fa-ils</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-ioxhost"></i> fa-ioxhost</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-lastfm"></i> fa-lastfm</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-lastfm-square"></i> fa-lastfm-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-line-chart"></i> fa-line-chart</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-meanpath"></i> fa-meanpath</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-newspaper-o"></i> fa-newspaper-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-paint-brush"></i> fa-paint-brush</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-paypal"></i> fa-paypal</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-pie-chart"></i> fa-pie-chart</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-plug"></i> fa-plug</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-shekel"></i> fa-shekel <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-sheqel"></i> fa-sheqel <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-slideshare"></i> fa-slideshare</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-soccer-ball-o"></i> fa-soccer-ball-o <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-toggle-off"></i> fa-toggle-off</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-toggle-on"></i> fa-toggle-on</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-trash"></i> fa-trash</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-tty"></i> fa-tty</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-twitch"></i> fa-twitch</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-wifi"></i> fa-wifi</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html"><i class="fa fa-yelp"></i> fa-yelp</a></div>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div>
+                            <h3> 4.1.0 新增的图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rub"></i> fa-rub</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ruble"></i> fa-ruble <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rouble"></i> fa-rouble <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pagelines"></i> fa-pagelines</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-stack-exchange"></i> fa-stack-exchange</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-o-right"></i> fa-arrow-circle-o-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-wheelchair"></i> fa-wheelchair</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-vimeo-square"></i> fa-vimeo-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-try"></i> fa-try</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-turkish-lira"></i> fa-turkish-lira <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</a></div>
+
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-automobile"></i> fa-automobile <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bank"></i> fa-bank <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-behance"></i> fa-behance</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-behance-square"></i> fa-behance-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bomb"></i> fa-bomb</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-building"></i> fa-building</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cab"></i> fa-cab <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-car"></i> fa-car</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-child"></i> fa-child</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-circle-o-notch"></i> fa-circle-o-notch</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-circle-thin"></i> fa-circle-thin</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-codepen"></i> fa-codepen</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cube"></i> fa-cube</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cubes"></i> fa-cubes</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-database"></i> fa-database</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-delicious"></i> fa-delicious</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-deviantart"></i> fa-deviantart</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-digg"></i> fa-digg</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-drupal"></i> fa-drupal</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-empire"></i> fa-empire</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-envelope-square"></i> fa-envelope-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-fax"></i> fa-fax</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-archive-o"></i> fa-file-archive-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-audio-o"></i> fa-file-audio-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-code-o"></i> fa-file-code-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-excel-o"></i> fa-file-excel-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-image-o"></i> fa-file-image-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-movie-o"></i> fa-file-movie-o <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-pdf-o"></i> fa-file-pdf-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-photo-o"></i> fa-file-photo-o <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-picture-o"></i> fa-file-picture-o <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-powerpoint-o"></i> fa-file-powerpoint-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-sound-o"></i> fa-file-sound-o <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-video-o"></i> fa-file-video-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-word-o"></i> fa-file-word-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-zip-o"></i> fa-file-zip-o <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ge"></i> fa-ge <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-git"></i> fa-git</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-git-square"></i> fa-git-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-google"></i> fa-google</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-graduation-cap"></i> fa-graduation-cap</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-hacker-news"></i> fa-hacker-news</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-header"></i> fa-header</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-history"></i> fa-history</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-institution"></i> fa-institution <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-joomla"></i> fa-joomla</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-jsfiddle"></i> fa-jsfiddle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-language"></i> fa-language</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-life-bouy"></i> fa-life-bouy <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-life-ring"></i> fa-life-ring</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-life-saver"></i> fa-life-saver <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-mortar-board"></i> fa-mortar-board <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-openid"></i> fa-openid</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-paper-plane"></i> fa-paper-plane</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-paper-plane-o"></i> fa-paper-plane-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-paragraph"></i> fa-paragraph</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-paw"></i> fa-paw</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pied-piper"></i> fa-pied-piper</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pied-piper-alt"></i> fa-pied-piper-alt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pied-piper-square"></i> fa-pied-piper-square <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-qq"></i> fa-qq</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ra"></i> fa-ra <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rebel"></i> fa-rebel</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-recycle"></i> fa-recycle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-reddit"></i> fa-reddit</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-reddit-square"></i> fa-reddit-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-send"></i> fa-send <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-send-o"></i> fa-send-o <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-share-alt"></i> fa-share-alt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-share-alt-square"></i> fa-share-alt-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-slack"></i> fa-slack</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sliders"></i> fa-sliders</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-soundcloud"></i> fa-soundcloud</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-space-shuttle"></i> fa-space-shuttle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-spoon"></i> fa-spoon</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-spotify"></i> fa-spotify</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-steam"></i> fa-steam</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-steam-square"></i> fa-steam-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-stumbleupon"></i> fa-stumbleupon</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-stumbleupon-circle"></i> fa-stumbleupon-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-support"></i> fa-support <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-taxi"></i> fa-taxi</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tencent-weibo"></i> fa-tencent-weibo</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tree"></i> fa-tree</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-university"></i> fa-university</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-vine"></i> fa-vine</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-wechat"></i> fa-wechat <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-weixin"></i> fa-weixin</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-wordpress"></i> fa-wordpress</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-yahoo"></i> fa-yahoo</a></div>
+
+                            <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>适合 Web 应用的图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-adjust"></i> fa-adjust</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-anchor"></i> fa-anchor</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-archive"></i> fa-archive</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows"></i> fa-arrows</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows-h"></i> fa-arrows-h</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows-v"></i> fa-arrows-v</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-asterisk"></i> fa-asterisk</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ban"></i> fa-ban</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bar-chart-o"></i> fa-bar-chart-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-barcode"></i> fa-barcode</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bars"></i> fa-bars</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-beer"></i> fa-beer</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bell"></i> fa-bell</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bell-o"></i> fa-bell-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bolt"></i> fa-bolt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-book"></i> fa-book</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bookmark"></i> fa-bookmark</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bookmark-o"></i> fa-bookmark-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-briefcase"></i> fa-briefcase</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bug"></i> fa-bug</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-building-o"></i> fa-building-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bullhorn"></i> fa-bullhorn</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bullseye"></i> fa-bullseye</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-calendar"></i> fa-calendar</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-calendar-o"></i> fa-calendar-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-camera"></i> fa-camera</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-camera-retro"></i> fa-camera-retro</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-certificate"></i> fa-certificate</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-check"></i> fa-check</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-check-circle"></i> fa-check-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-check-circle-o"></i> fa-check-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-check-square"></i> fa-check-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-check-square-o"></i> fa-check-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-circle"></i> fa-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-circle-o"></i> fa-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-clock-o"></i> fa-clock-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cloud"></i> fa-cloud</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cloud-download"></i> fa-cloud-download</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cloud-upload"></i> fa-cloud-upload</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-code"></i> fa-code</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-code-fork"></i> fa-code-fork</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-coffee"></i> fa-coffee</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cog"></i> fa-cog</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cogs"></i> fa-cogs</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-comment"></i> fa-comment</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-comment-o"></i> fa-comment-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-comments"></i> fa-comments</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-comments-o"></i> fa-comments-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-compass"></i> fa-compass</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-credit-card"></i> fa-credit-card</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-crop"></i> fa-crop</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-crosshairs"></i> fa-crosshairs</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cutlery"></i> fa-cutlery</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dashboard"></i> fa-dashboard <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-desktop"></i> fa-desktop</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-download"></i> fa-download</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-edit"></i> fa-edit <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ellipsis-h"></i> fa-ellipsis-h</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ellipsis-v"></i> fa-ellipsis-v</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-envelope"></i> fa-envelope</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-envelope-o"></i> fa-envelope-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-eraser"></i> fa-eraser</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-exchange"></i> fa-exchange</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-exclamation"></i> fa-exclamation</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-exclamation-circle"></i> fa-exclamation-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-exclamation-triangle"></i> fa-exclamation-triangle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-external-link"></i> fa-external-link</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-external-link-square"></i> fa-external-link-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-eye"></i> fa-eye</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-eye-slash"></i> fa-eye-slash</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-female"></i> fa-female</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-fighter-jet"></i> fa-fighter-jet</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-film"></i> fa-film</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-filter"></i> fa-filter</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-fire"></i> fa-fire</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-fire-extinguisher"></i> fa-fire-extinguisher</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-flag"></i> fa-flag</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-flag-checkered"></i> fa-flag-checkered</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-flag-o"></i> fa-flag-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-flash"></i> fa-flash <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-flask"></i> fa-flask</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-folder"></i> fa-folder</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-folder-o"></i> fa-folder-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-folder-open"></i> fa-folder-open</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-folder-open-o"></i> fa-folder-open-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-frown-o"></i> fa-frown-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-gamepad"></i> fa-gamepad</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-gavel"></i> fa-gavel</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-gear"></i> fa-gear <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-gears"></i> fa-gears <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-gift"></i> fa-gift</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-glass"></i> fa-glass</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-globe"></i> fa-globe</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-group"></i> fa-group <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-hdd-o"></i> fa-hdd-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-headphones"></i> fa-headphones</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-heart"></i> fa-heart</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-heart-o"></i> fa-heart-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-home"></i> fa-home</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-inbox"></i> fa-inbox</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-info"></i> fa-info</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-info-circle"></i> fa-info-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-key"></i> fa-key</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-keyboard-o"></i> fa-keyboard-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-laptop"></i> fa-laptop</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-leaf"></i> fa-leaf</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-legal"></i> fa-legal <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-lemon-o"></i> fa-lemon-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-level-down"></i> fa-level-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-level-up"></i> fa-level-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-lightbulb-o"></i> fa-lightbulb-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-location-arrow"></i> fa-location-arrow</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-lock"></i> fa-lock</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-magic"></i> fa-magic</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-magnet"></i> fa-magnet</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-mail-forward"></i> fa-mail-forward <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-mail-reply"></i> fa-mail-reply <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-mail-reply-all"></i> fa-mail-reply-all</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-male"></i> fa-male</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-map-marker"></i> fa-map-marker</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-meh-o"></i> fa-meh-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-microphone"></i> fa-microphone</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-microphone-slash"></i> fa-microphone-slash</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-minus"></i> fa-minus</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-minus-circle"></i> fa-minus-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-minus-square"></i> fa-minus-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-minus-square-o"></i> fa-minus-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-mobile"></i> fa-mobile</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-mobile-phone"></i> fa-mobile-phone <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-money"></i> fa-money</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-moon-o"></i> fa-moon-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-music"></i> fa-music</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pencil"></i> fa-pencil</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pencil-square"></i> fa-pencil-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pencil-square-o"></i> fa-pencil-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-phone"></i> fa-phone</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-phone-square"></i> fa-phone-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-picture-o"></i> fa-picture-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plane"></i> fa-plane</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus"></i> fa-plus</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus-circle"></i> fa-plus-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus-square"></i> fa-plus-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-power-off"></i> fa-power-off</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-print"></i> fa-print</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-puzzle-piece"></i> fa-puzzle-piece</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-qrcode"></i> fa-qrcode</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-question"></i> fa-question</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-question-circle"></i> fa-question-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-quote-left"></i> fa-quote-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-quote-right"></i> fa-quote-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-random"></i> fa-random</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-refresh"></i> fa-refresh</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-reply"></i> fa-reply</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-reply-all"></i> fa-reply-all</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-retweet"></i> fa-retweet</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-road"></i> fa-road</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rocket"></i> fa-rocket</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rss"></i> fa-rss</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rss-square"></i> fa-rss-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-search"></i> fa-search</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-search-minus"></i> fa-search-minus</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-search-plus"></i> fa-search-plus</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-share"></i> fa-share</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-share-square"></i> fa-share-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-share-square-o"></i> fa-share-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-shield"></i> fa-shield</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-shopping-cart"></i> fa-shopping-cart</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sign-in"></i> fa-sign-in</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sign-out"></i> fa-sign-out</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-signal"></i> fa-signal</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sitemap"></i> fa-sitemap</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-smile-o"></i> fa-smile-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort"></i> fa-sort</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-alpha-asc"></i> fa-sort-alpha-asc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-alpha-desc"></i> fa-sort-alpha-desc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-amount-asc"></i> fa-sort-amount-asc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-amount-desc"></i> fa-sort-amount-desc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-asc"></i> fa-sort-asc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-desc"></i> fa-sort-desc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-down"></i> fa-sort-down <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-numeric-asc"></i> fa-sort-numeric-asc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-numeric-desc"></i> fa-sort-numeric-desc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sort-up"></i> fa-sort-up <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-spinner"></i> fa-spinner</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-square"></i> fa-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-square-o"></i> fa-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-star"></i> fa-star</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-star-half"></i> fa-star-half</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-star-half-empty"></i> fa-star-half-empty <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-star-half-full"></i> fa-star-half-full <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-star-half-o"></i> fa-star-half-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-star-o"></i> fa-star-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-subscript"></i> fa-subscript</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-suitcase"></i> fa-suitcase</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-sun-o"></i> fa-sun-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-superscript"></i> fa-superscript</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tablet"></i> fa-tablet</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tachometer"></i> fa-tachometer</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tag"></i> fa-tag</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tags"></i> fa-tags</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tasks"></i> fa-tasks</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-terminal"></i> fa-terminal</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-thumb-tack"></i> fa-thumb-tack</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-thumbs-down"></i> fa-thumbs-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-thumbs-o-down"></i> fa-thumbs-o-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-thumbs-o-up"></i> fa-thumbs-o-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-thumbs-up"></i> fa-thumbs-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ticket"></i> fa-ticket</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-times"></i> fa-times</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-times-circle"></i> fa-times-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-times-circle-o"></i> fa-times-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tint"></i> fa-tint</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-down"></i> fa-toggle-down <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-right"></i> fa-toggle-right <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-up"></i> fa-toggle-up <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-trash-o"></i> fa-trash-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-trophy"></i> fa-trophy</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-truck"></i> fa-truck</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-umbrella"></i> fa-umbrella</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-unlock"></i> fa-unlock</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-unlock-alt"></i> fa-unlock-alt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-unsorted"></i> fa-unsorted <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-upload"></i> fa-upload</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-user"></i> fa-user</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-users"></i> fa-users</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-video-camera"></i> fa-video-camera</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-volume-down"></i> fa-volume-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-volume-off"></i> fa-volume-off</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-volume-up"></i> fa-volume-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-warning"></i> fa-warning <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-wheelchair"></i> fa-wheelchair</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-wrench"></i> fa-wrench</a></div>
+                            <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>适合表单的图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-check-square"></i> fa-check-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-check-square-o"></i> fa-check-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-circle"></i> fa-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-circle-o"></i> fa-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-minus-square"></i> fa-minus-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-minus-square-o"></i> fa-minus-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus-square"></i> fa-plus-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-square"></i> fa-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-square-o"></i> fa-square-o</a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>货币图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-btc"></i> fa-btc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cny"></i> fa-cny <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dollar"></i> fa-dollar <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-eur"></i> fa-eur</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-euro"></i> fa-euro <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-gbp"></i> fa-gbp</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-inr"></i> fa-inr</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-jpy"></i> fa-jpy</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-krw"></i> fa-krw</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-money"></i> fa-money</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rmb"></i> fa-rmb <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rouble"></i> fa-rouble <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rub"></i> fa-rub</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ruble"></i> fa-ruble <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rupee"></i> fa-rupee <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-try"></i> fa-try</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-turkish-lira"></i> fa-turkish-lira <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-usd"></i> fa-usd</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-won"></i> fa-won <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-yen"></i> fa-yen <span class="text-muted">(alias)</span></a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>文本编辑器图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-align-center"></i> fa-align-center</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-align-justify"></i> fa-align-justify</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-align-left"></i> fa-align-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-align-right"></i> fa-align-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bold"></i> fa-bold</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chain"></i> fa-chain <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chain-broken"></i> fa-chain-broken</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-clipboard"></i> fa-clipboard</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-columns"></i> fa-columns</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-copy"></i> fa-copy <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-cut"></i> fa-cut <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dedent"></i> fa-dedent <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-eraser"></i> fa-eraser</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file"></i> fa-file</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-o"></i> fa-file-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-text"></i> fa-file-text</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-file-text-o"></i> fa-file-text-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-files-o"></i> fa-files-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-floppy-o"></i> fa-floppy-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-font"></i> fa-font</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-indent"></i> fa-indent</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-italic"></i> fa-italic</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-link"></i> fa-link</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-list"></i> fa-list</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-list-alt"></i> fa-list-alt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-list-ol"></i> fa-list-ol</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-list-ul"></i> fa-list-ul</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-outdent"></i> fa-outdent</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-paperclip"></i> fa-paperclip</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-paste"></i> fa-paste <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-repeat"></i> fa-repeat</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rotate-left"></i> fa-rotate-left <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-rotate-right"></i> fa-rotate-right <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-save"></i> fa-save <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-scissors"></i> fa-scissors</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-strikethrough"></i> fa-strikethrough</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-table"></i> fa-table</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-text-height"></i> fa-text-height</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-text-width"></i> fa-text-width</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-th"></i> fa-th</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="index.html"><i class="fa fa-th-large"></i> fa-th-large</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-th-list"></i> fa-th-list</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-underline"></i> fa-underline</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-undo"></i> fa-undo</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-unlink"></i> fa-unlink <span class="text-muted">(alias)</span></a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>方向图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-double-down"></i> fa-angle-double-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-double-left"></i> fa-angle-double-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-double-right"></i> fa-angle-double-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-double-up"></i> fa-angle-double-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-down"></i> fa-angle-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-left"></i> fa-angle-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-right"></i> fa-angle-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-angle-up"></i> fa-angle-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-down"></i> fa-arrow-circle-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-left"></i> fa-arrow-circle-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-o-down"></i> fa-arrow-circle-o-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-o-right"></i> fa-arrow-circle-o-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-o-up"></i> fa-arrow-circle-o-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-right"></i> fa-arrow-circle-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-circle-up"></i> fa-arrow-circle-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-down"></i> fa-arrow-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-left"></i> fa-arrow-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-right"></i> fa-arrow-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrow-up"></i> fa-arrow-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows"></i> fa-arrows</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows-alt"></i> fa-arrows-alt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows-h"></i> fa-arrows-h</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows-v"></i> fa-arrows-v</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-down"></i> fa-caret-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-left"></i> fa-caret-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-right"></i> fa-caret-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-caret-up"></i> fa-caret-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-circle-down"></i> fa-chevron-circle-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-circle-left"></i> fa-chevron-circle-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-circle-right"></i> fa-chevron-circle-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-circle-up"></i> fa-chevron-circle-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-down"></i> fa-chevron-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-left"></i> fa-chevron-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-right"></i> fa-chevron-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-chevron-up"></i> fa-chevron-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-hand-o-down"></i> fa-hand-o-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-hand-o-left"></i> fa-hand-o-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-hand-o-right"></i> fa-hand-o-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-hand-o-up"></i> fa-hand-o-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-long-arrow-down"></i> fa-long-arrow-down</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-long-arrow-left"></i> fa-long-arrow-left</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-long-arrow-right"></i> fa-long-arrow-right</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-long-arrow-up"></i> fa-long-arrow-up</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-down"></i> fa-toggle-down <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-right"></i> fa-toggle-right <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-toggle-up"></i> fa-toggle-up <span class="text-muted">(alias)</span></a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>视频播放器图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-arrows-alt"></i> fa-arrows-alt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-backward"></i> fa-backward</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-compress"></i> fa-compress</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-eject"></i> fa-eject</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-expand"></i> fa-expand</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-fast-backward"></i> fa-fast-backward</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-fast-forward"></i> fa-fast-forward</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-forward"></i> fa-forward</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pause"></i> fa-pause</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-play"></i> fa-play</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-play-circle"></i> fa-play-circle</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-play-circle-o"></i> fa-play-circle-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-step-backward"></i> fa-step-backward</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-step-forward"></i> fa-step-forward</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-stop"></i> fa-stop</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-youtube-play"></i> fa-youtube-play</a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>品牌图标</h3>
+
+                            <div class="alert alert-success">
+                                <ul class="margin-bottom-none padding-left-lg">
+                                    <li>所有品牌的图标是其各自所有者的商标。</li>
+                                </ul>
+                            </div>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-adn"></i> fa-adn</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-android"></i> fa-android</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-apple"></i> fa-apple</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bitbucket"></i> fa-bitbucket</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bitbucket-square"></i> fa-bitbucket-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-btc"></i> fa-btc</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-css3"></i> fa-css3</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dribbble"></i> fa-dribbble</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-dropbox"></i> fa-dropbox</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-facebook"></i> fa-facebook</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-facebook-square"></i> fa-facebook-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-flickr"></i> fa-flickr</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-foursquare"></i> fa-foursquare</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-github"></i> fa-github</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-github-alt"></i> fa-github-alt</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-github-square"></i> fa-github-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-gittip"></i> fa-gittip</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-google-plus"></i> fa-google-plus</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-google-plus-square"></i> fa-google-plus-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-html5"></i> fa-html5</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-instagram"></i> fa-instagram</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-linkedin"></i> fa-linkedin</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-linkedin-square"></i> fa-linkedin-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-linux"></i> fa-linux</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-maxcdn"></i> fa-maxcdn</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pagelines"></i> fa-pagelines</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pinterest"></i> fa-pinterest</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-pinterest-square"></i> fa-pinterest-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-renren"></i> fa-renren</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-skype"></i> fa-skype</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-stack-exchange"></i> fa-stack-exchange</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-stack-overflow"></i> fa-stack-overflow</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-trello"></i> fa-trello</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tumblr"></i> fa-tumblr</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-tumblr-square"></i> fa-tumblr-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-twitter"></i> fa-twitter</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-twitter-square"></i> fa-twitter-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-vimeo-square"></i> fa-vimeo-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-vk"></i> fa-vk</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-weibo"></i> fa-weibo</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-windows"></i> fa-windows</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-xing"></i> fa-xing</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-xing-square"></i> fa-xing-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-youtube"></i> fa-youtube</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-youtube-play"></i> fa-youtube-play</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-youtube-square"></i> fa-youtube-square</a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        <div>
+                            <h3>医疗图标</h3>
+
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-ambulance"></i> fa-ambulance</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-h-square"></i> fa-h-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-hospital-o"></i> fa-hospital-o</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-medkit"></i> fa-medkit</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-plus-square"></i> fa-plus-square</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-stethoscope"></i> fa-stethoscope</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-user-md"></i> fa-user-md</a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="icons.html#"><i class="fa fa-wheelchair"></i> fa-wheelchair</a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- 右侧内容div .wrapper 结束 -->
+
+            <div class="footer">
+                <div class="pull-right">
+                    100000个访问<strong>总250w</strong>个访问.
+                </div>
+                <div>
+                    <strong>Copyright</strong> west263.com &copy; 2015
+                </div>
+            </div>
+        </div><!-- 右侧内容 结束 -->
+
+        <!-- 右上角隐藏通知，设置页 -->
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+                <ul class="nav nav-tabs navs-3">
+                    <li class="active">
+                        <a data-toggle="tab" href="dashboard_2.html#tab-1"> 通知 </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="dashboard_2.html#tab-2"> 任务 </a>
+                    </li>
+                    <li class="">
+                        <a data-toggle="tab" href="dashboard_2.html#tab-3"><i class="fa fa-gear"></i></a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-comments-o"></i> 最新通知 </h3>
+                            <small><i class="fa fa-tim"></i> 您当前有10条未读通知.</small>
+                        </div>
+
+                        <div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a1.jpg">
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        Yun+项目还要很多页面需要测试。
+                                        <br>
+                                        <small class="text-muted">今天 4:21 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a2.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        今天来面试美工的MM很不错，小刘你负责通知她明天到公司人事部办入职手续。
+                                        <br>
+                                        <small class="text-muted">今天 2:45 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        朋友，那不是懒，懒是可以克服的。你只是脑子比较弱(笨)，没办法长时间经 受高强度的思考，去搞逻辑太复杂的东西和处理太多的信息量。
+                                        <br>
+                                        <small class="text-muted">昨天 1:10 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a4.jpg">
+                                    </div>
+
+                                    <div class="media-body">
+                                        很想和你去吹吹风，吹掉我给你的不愉快，只留下我给你的开心。
+                                        <br>
+                                        <small class="text-muted">昨天 8:37 上午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a8.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        单身很惭愧，恋爱很陶醉，结婚则太贵，离婚是因为不想浪费，再婚是因为无路可退。爱情没有不对，恋爱还要干脆，不要因为一只玫瑰而放弃整个春天的约会。
+                                        <br>
+                                        <small class="text-muted">今天 4:21 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a7.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        世上有两种女孩最可爱，一种是漂亮；一种是聪慧，而你是聪明的漂亮女孩。
+                                        <br>
+                                        <small class="text-muted">昨天 2:45 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        “神雕侠侣”恋情曝光 同房过夜被拍。
+                                        <br>
+                                        <small class="text-muted">昨天 1:10 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-cube"></i> 最新任务</h3>
+                            <small><i class="fa fa-tim"></i> 您当前有16个任务。 10个已完成。</small>
+                        </div>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">6小时前</div>
+                                    <h4>后台会员模块</h4>
+                                    按进度完成后台会员模块开发。
+
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>后台订单模块bug处理 </h4>
+                                    bug描述：订单模块支付未完成的订单会令订单金额变为负数；
+                                    优先级：重大bug。
+                                    <div class="small">完成进度: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>开发国庆促销专题页面</h4>
+                                    同美工协同完成开发国庆促销专题页面。
+
+                                    <div class="small">完成进度: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <span class="label label-primary pull-right">新</span>
+                                    <h4>APP页面测试</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    新开发的APP各页面功能测试，完成后整理报告给项目经理。
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>新功能开发</h4>
+                                    订单系统添加一个一键下单功能。
+
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> 设置 </h3>
+                        </div>
+
+                        <div class="setings-item">
+                    <span>
+                        显示通知
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                    <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        隐藏聊天窗口
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                                    <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        清空历史记录
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                    <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        显示聊天窗口
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                    <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        显示在线用户
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                    <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        全局搜索
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                    <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        每日动态
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                    <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <h4>设置</h4>
+                            <div class="small">
+                                您可以从这里进行一些常规设置，当然这只是一个演示页面。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 右上角隐藏通知，设置页 end -->
+    </div>
+
+    <!-- 引入主要jQuery 等js框架 -->
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.metismenu.js"></script>
+    <script src="Scripts/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="Scripts/inspinia.js"></script>
+    <script src="Scripts/pace.min.js"></script>
+
+</body>
+</html>

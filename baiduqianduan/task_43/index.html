@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="task_43.css" />
+	</head>
+	<body>
+		<div class="image-container" id="image-container">
+			<div class="images image_six">
+				<div class="image">
+					<img src="img1.jpg"/>
+					<span title="删除相片">-</span>
+				</div>
+				<div class="image">
+					<img src="img2.jpg"/>
+					<span title="删除相片">-</span>
+				</div>
+				<div class="image">
+					<img src="img3.jpg"/>
+					<span title="删除相片">-</span>
+				</div>
+				<div class="image">
+					<img src="img4.jpg"/>
+					<span title="删除相片">-</span>
+				</div>
+				<div class="image">
+					<img src="img5.jpg"/>
+					<span title="删除相片">-</span>
+				</div>
+				<div class="image">
+					<img src="img6.jpg"/>
+					<span title="删除相片">-</span>
+				</div>
+			</div>
+		</div>
+		<div class="addimage">
+			<select name="">
+				<option value="img1.jpg">img1.jpg</option>
+				<option value="img2.jpg">img2.jpg</option>
+				<option value="img3.jpg">img3.jpg</option>
+				<option value="img4.jpg">img4.jpg</option>
+				<option value="img5.jpg">img5.jpg</option>
+				<option value="img6.jpg">img6.jpg</option>
+			</select>
+			<span>添加照片</span></div>
+	</body>
+	
+	<script src="task_43.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		PhotoAlbum.createAlbum({
+			classobj: document.getElementById('image-container'),
+			images: ['img1.jpg','img2.jpg','img3.jpg'],
+		});
+	</script>
+</html>

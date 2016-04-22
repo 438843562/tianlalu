@@ -1,0 +1,974 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="utf-8">
+    <!-- 初始网页宽度为设置屏幕宽度，缩放级别为1.0，禁止用户缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- 设置360等双内核的浏览器渲染模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- 设置IE支持的最高模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!-- 禁止移动浏览器转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 网站标志 -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+    <title>Yun+后台主题UI | 日历</title>
+    <!-- 网站描述 -->
+    <meta name="description" content="Yun+是一个完全响应式的后台主题UI框架，基于Boostrap CSS框架，jQuery框架等各种开源前端框架开发的HTML5+CSS3前端主题UI框架，提供各种强大的常用UI组件，您可以基于此框架应用于您的网站开发，如网站后台，会员中心，论坛，CMS等等。">
+    <!-- 网站SEO关键词 -->
+    <meta name="keywords" content="Yun+UI,云+主题,云加后台主题UI,响应式的后台主题,Boostrap主题框架">
+    
+    <!-- 引入Bootstrap CSS框架 awesome字体-->
+    <link href="Css/bootstrap.min.css" rel="stylesheet">
+    <link href="Css/font-awesome.css" rel="stylesheet">
+
+    <!-- 日历CSS -->
+    <link href="Css/fullcalendar.css" rel="stylesheet">
+    <link href="Css/fullcalendar.print.css" rel='stylesheet' media='print'>
+
+    <!-- CSS动画框架 -->
+    <link href="Css/animate.css" rel="stylesheet">
+    <!-- Yun+ UI css主文件 -->
+    <link href="Css/west263.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 侧边导航菜单 开始 -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img class="img-circle" src="Picture/profile_small.jpg" alt="image"></span>
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">Yun+ UI</strong>
+                                    </span>
+                                </span>
+                                <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">项目</a></li>
+                                <li><a href="contacts.html">联系我们</a></li>
+                                <li><a href="mailbox.html">信箱</li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">YUN+</div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-tabel">主面板</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="index.html">主面板</a></li><li><a href="dashboard_1.html">主面板示例一</a></li>
+                            <li><a href="dashboard_2.html">主面板示例二</a></li>
+                            <li><a href="dashboard_3.html">主面板示例三</a></li>
+                            <li><a href="dashboard_4.html">主面板示例四</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="layouts.html">
+                            <i class="fa fa-diamond"></i>
+                            <span class="nav-label">布局</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span class="nav-label">图表</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="graph_flot.html">Flot</a></li>
+                            <li><a href="graph_morris.html">Morris</a></li>
+                            <li><a href="graph_rickshaw.html">Rickshaw</a></li>
+                            <li><a href="graph_chartjs.html">Chart</a></li>
+                            <li><a href="graph_chartist.html">Chartist</a></li>
+                            <li><a href="graph_peity.html">Peity</a></li>
+                            <li><a href="graph_sparkline.html">Sparkline</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox.html">
+                            <i class="fa fa-envelope"></i>
+                            <span class="nav-label">信箱</span>
+                            <span class="label label-warning pull-right">16/24</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="mailbox.html">收件箱</a></li>
+                            <li><a href="mail_detail.html">查看邮件</a></li>
+                            <li><a href="mail_compose.html">写信</a></li>
+                            <li><a href="mail_template.html">邮件模板</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="metrics.html">
+                            <i class="fa fa-pie-chart"></i>
+                            <span class="nav-label">Metrics 图表</span>
+                            <span class="label label-primary pull-right">新</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">小部件</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <i class="fa fa-edit"></i>
+                            <span class="nav-label">表单</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="form_basic.html">基本表单</a></li>
+                            <li><a href="form_advanced.html">高级插件</a></li>
+                            <li><a href="form_wizard.html">表单向导</a></li>
+                            <li><a href="form_file_upload.html">文件上传</a></li>
+                            <li><a href="form_editors.html">文本编辑</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="index.html#">
+                            <i class="fa fa-desktop"></i>
+                            <span class="nav-label">App 页面</span>
+                            <span class="pull-right label label-primary">专用</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="contacts.html">联系人</a></li>
+                            <li><a href="profile.html">个人资料</a></li>
+                            <li><a href="project.html">项目</a></li>
+                            <li><a href="project_detail.html">项目详情</a></li>
+                            <li><a href="teams_board.html">小组</a></li>
+                            <li><a href="social_feed.html">社交管理</a></li>
+                            <li><a href="clients.html">客户管理</a></li>
+                            <li><a href="full_height.html">邮件阅读</a></li>
+                            <li><a href="file_manager.html">文件管理</a></li>
+                            <li class="active"><a href="calendar.html">日历</a></li>
+                            <li><a href="issue_tracker.html">问题跟踪</a></li>
+                            <li><a href="blog.html">博客</a></li>
+                            <li><a href="article.html">文章</a></li>
+                            <li><a href="faq.html">帮助中心</a></li>
+                            <li><a href="timeline.html">时间轴</a></li>
+                            <li><a href="pin_board.html">标签墙</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-files-o"></i>
+                            <span class="nav-label">其它页面</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="search_results.html">搜索页面</a></li>
+                            <li><a href="lockscreen.html">屏锁</a></li>
+                            <li><a href="invoice.html">票据</a></li>
+                            <li><a href="login.html">登录页面</a></li>
+                            <li><a href="login_two_columns.html">登录页面 v.2</a></li>
+                            <li><a href="forgot_password.html">找回密码</a></li>
+                            <li><a href="register.html">注册页面</a></li>
+                            <li><a href="404.html">404 页面</a></li>
+                            <li><a href="500.html">500 页面</a></li>
+                            <li><a href="empty_page.html">空白页面</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-globe"></i>
+                            <span class="nav-label">各种页面</span>
+                            <span class="label label-info pull-right">新</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="toastr_notifications.html">通知</a></li>
+                            <li><a href="nestable_list.html">折叠列表</a></li>
+                            <li><a href="agile_board.html">任务清单</a></li>
+                            <li><a href="timeline_2.html">时间轴 v.2</a></li>
+                            <li><a href="diff.html">文本对比</a></li>
+                            <li><a href="sweetalert.html">SweetAlert对话框</a></li>
+                            <li><a href="idle_timer.html">Idle timer</a></li>
+                            <li><a href="spinners.html">加载动画</a></li>
+                            <li><a href="tinycon.html">Live favicon</a></li>
+                            <li><a href="code_editor.html">代码编辑</a></li>
+                            <li><a href="modal_window.html">模态框</a></li>
+                            <li><a href="forum_main.html">论坛</a></li>
+                            <li><a href="validation.html">输入验证</a></li>
+                            <li><a href="tree_view.html">树形视图</a></li>
+                            <li><a href="chat_view.html">聊天视图</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">UI元素</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="typography.html">排版</a></li>
+                            <li><a href="icons.html">图标</a></li>
+                            <li><a href="draggable_panels.html">拖动面板</a></li>
+                            <li><a href="buttons.html">按钮</a></li>
+                            <li><a href="video.html">视频</a></li>
+                            <li><a href="tabs_panels.html">面板</a></li>
+                            <li><a href="tabs.html">选项卡</a></li>
+                            <li><a href="notifications.html">通知 & 提示</a></li>
+                            <li><a href="badges_labels.html">徽章, 标签, 进度条</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">栅格</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-table"></i>
+                            <span class="nav-label">表格</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="table_basic.html">基本表格</a></li>
+                            <li><a href="table_data_tables.html">DataTables</a></li>
+                            <li><a href="table_foo_table.html">FooTables</a></li>
+                            <li><a href="jq_grid.html">jqGrid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="nav-label">电子商城</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="ecommerce_products_grid.html">产品展示</a></li>
+                            <li><a href="ecommerce_product_list.html">产品列表</a></li>
+                            <li><a href="ecommerce_product.html">产品编辑</a></li>
+                            <li><a href="ecommerce-orders.html">订单</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-picture-o"></i>
+                            <span class="nav-label">相册</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="basic_gallery.html">基本图库</a></li>
+                            <li><a href="carousel.html">图片切换</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sitemap"></i>
+                            <span class="nav-label">菜单</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">二级菜单项</a></li>
+                            <li>
+                                <a href="#">三级菜单 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="#">三级菜单项</a></li>
+                                    <li><a href="#">三级菜单项</a></li>
+                                    <li><a href="#">三级菜单项</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="css_animation.html">
+                            <i class="fa fa-magic"></i>
+                            <span class="nav-label">CSS 动画</span>
+                            <span class="label label-info pull-right">62</span>
+                        </a>
+                    </li>
+                    <li class="landing_link">
+                        <a target="_blank" href="landing.html">
+                            <i class="fa fa-star"></i>
+                            <span class="nav-label">载入页面</span>
+                            <span class="label label-warning pull-right">新</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>                
+        </nav><!-- 侧边导航菜单 结束 -->
+
+        <!-- 右侧内容 开始 -->
+        <div class="gray-bg" id="page-wrapper">
+            <!-- 右侧顶部导航div 开始 -->
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i>
+                        </a>
+                        <form class="navbar-form-custom" action="search_results.html" role="search">
+                            <div class="form-group">
+                                <input class="form-control" id="top-search" name="top-search" type="text" placeholder="请输入您要查找的内容……">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li><span class="m-r-sm text-muted welcome-message">欢迎来到 YUN+ 后台UI主题</span></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="pull-left" href="profile.html">
+                                            <img class="img-circle" src="Picture/a7.jpg" alt="image">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46h前</small>
+                                            <strong>国民老公</strong>又在微博放料啦，某某女演员……<br>
+                                            <small class="text-muted">3 前 7:58 下午 - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="Picture/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">5小时前</small>
+                                            <strong>股票大跌</strong> 小马哥不再是首富了。 <strong>———来自财经网</strong>. <br>
+                                            <small class="text-muted">昨天 1:21 下午 - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="Picture/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right">23小时前</small>
+                                            <strong>风姐</strong> 爱上 <strong>小马哥啦！</strong>. <br>
+                                            <small class="text-muted">2天前 2:30 上午 - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i> <strong>查看全部消息</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                                <i class="fa fa-bell"></i>
+                                <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 你有8条未读消息
+                                            <span class="pull-right text-muted small">4 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="grid_options.html">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> 服务器重启
+                                            <span class="pull-right text-muted small">4 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看全部提醒</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- 右侧顶部导航div 结束 -->
+
+            <!-- 右侧内容div .wrapper 开始 -->
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>日历</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a>App 页面</a></li>
+                        <li class="active"><strong>日历</strong></li>
+                    </ol>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <div class="row animated fadeInDown">
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>拖动事件</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="calendar.html#">选项 1</a></li>
+                                        <li><a href="calendar.html#">选项 2</a></li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                                <div class="ibox-content">
+                                    <div id='external-events'>
+                                        <p>可拖动事件到右边的日历中</p>
+                                        <div class='external-event navy-bg'>到超市买点好吃的</div>
+                                        <div class='external-event navy-bg'>项目上线测试</div>
+                                        <div class='external-event navy-bg'>向主管汇报工作</div>
+                                        <div class='external-event navy-bg'>打电话给老板</div>
+                                        <div class='external-event navy-bg'>和前台MM约会</div>
+                                        <p class="m-t">
+                                            <input class="i-checks" id='drop-remove' type='checkbox' checked>
+                                            <label for='drop-remove'>移动后删除</label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <h2>FullCalendar</h2>
+                                FullCalendar 是一个jQuery插件，它提供了全尺寸，可拖动，使用Ajax的操作方式，并且可以使用自己的feed格式，如谷歌日历。
+                                <p>
+                                    <a href="http://arshaw.com/fullcalendar/" target="_blank">FullCalendar 文档</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .col-lg-3 end -->
+
+                    <div class="col-lg-9">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>示例</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="calendar.html#">选项 1</a></li>
+                                        <li><a href="calendar.html#">选项 2</a></li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div id="calendar"></div>
+                            </div>
+                        </div>
+                    </div><!-- .col-lg-9 end -->
+
+                </div>
+            </div>
+            <!-- 右侧内容div .wrapper 结束 -->
+            <div class="footer">
+                <div class="pull-right">
+                    100000个访问<strong>总250w</strong>个访问.
+                </div>
+                <div>
+                    <strong>Copyright</strong> west263.com &copy; 2015
+                </div>
+            </div>
+        </div><!-- 右侧内容 结束 -->
+
+        <!-- 右上角隐藏通知，设置页 -->
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+                <ul class="nav nav-tabs navs-3">
+                    <li class="active">
+                        <a data-toggle="tab" href="dashboard_2.html#tab-1"> 通知 </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="dashboard_2.html#tab-2"> 任务 </a>
+                    </li>
+                    <li class="">
+                        <a data-toggle="tab" href="dashboard_2.html#tab-3"><i class="fa fa-gear"></i></a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-comments-o"></i> 最新通知 </h3>
+                            <small><i class="fa fa-tim"></i> 您当前有10条未读通知.</small>
+                        </div>
+
+                        <div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a1.jpg">
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        Yun+项目还要很多页面需要测试。
+                                        <br>
+                                        <small class="text-muted">今天 4:21 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a2.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        今天来面试美工的MM很不错，小刘你负责通知她明天到公司人事部办入职手续。
+                                        <br>
+                                        <small class="text-muted">今天 2:45 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        朋友，那不是懒，懒是可以克服的。你只是脑子比较弱(笨)，没办法长时间经 受高强度的思考，去搞逻辑太复杂的东西和处理太多的信息量。
+                                        <br>
+                                        <small class="text-muted">昨天 1:10 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a4.jpg">
+                                    </div>
+
+                                    <div class="media-body">
+                                        很想和你去吹吹风，吹掉我给你的不愉快，只留下我给你的开心。
+                                        <br>
+                                        <small class="text-muted">昨天 8:37 上午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a8.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        单身很惭愧，恋爱很陶醉，结婚则太贵，离婚是因为不想浪费，再婚是因为无路可退。爱情没有不对，恋爱还要干脆，不要因为一只玫瑰而放弃整个春天的约会。
+                                        <br>
+                                        <small class="text-muted">今天 4:21 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a7.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        世上有两种女孩最可爱，一种是漂亮；一种是聪慧，而你是聪明的漂亮女孩。
+                                        <br>
+                                        <small class="text-muted">昨天 2:45 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        “神雕侠侣”恋情曝光 同房过夜被拍。
+                                        <br>
+                                        <small class="text-muted">昨天 1:10 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-cube"></i> 最新任务</h3>
+                            <small><i class="fa fa-tim"></i> 您当前有16个任务。 10个已完成。</small>
+                        </div>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">6小时前</div>
+                                    <h4>后台会员模块</h4>
+                                    按进度完成后台会员模块开发。
+
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>后台订单模块bug处理 </h4>
+                                    bug描述：订单模块支付未完成的订单会令订单金额变为负数；
+                                    优先级：重大bug。
+                                    <div class="small">完成进度: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>开发国庆促销专题页面</h4>
+                                    同美工协同完成开发国庆促销专题页面。
+
+                                    <div class="small">完成进度: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <span class="label label-primary pull-right">新</span>
+                                    <h4>APP页面测试</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    新开发的APP各页面功能测试，完成后整理报告给项目经理。
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>新功能开发</h4>
+                                    订单系统添加一个一键下单功能。
+
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> 设置 </h3>
+                        </div>
+
+                        <div class="setings-item">
+                    <span>
+                        显示通知
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                    <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        隐藏聊天窗口
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                                    <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        清空历史记录
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                    <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        显示聊天窗口
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                    <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        显示在线用户
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                    <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        全局搜索
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                    <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        每日动态
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                    <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <h4>设置</h4>
+                            <div class="small">
+                                您可以从这里进行一些常规设置，当然这只是一个演示页面。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 右上角隐藏通知，设置页 end -->
+    </div>
+
+    <!-- 引入主要jQuery 等js框架 -->
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.metismenu.js"></script>
+    <script src="Scripts/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="Scripts/inspinia.js"></script>
+    <script src="Scripts/pace.min.js"></script>
+
+    <!-- jQuery UI custom -->
+    <script src="Scripts/jquery-ui.custom.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="Scripts/icheck.min.js"></script>
+
+    <!-- Full Calendar -->
+    <script src="Scripts/moment.min.js"></script>
+    <script src="Scripts/fullcalendar.min.js"></script>
+    <script src="Scripts/zh-cn.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green'
+            });
+
+            /* initialize the external events
+             -----------------------------------------------------------------*/
+
+
+            $('#external-events div.external-event').each(function() {
+
+                // store data so the calendar knows to render an event upon drop
+                $(this).data('event', {
+                    title: $.trim($(this).text()), // use the element's text as the event title
+                    stick: true // maintain when user navigates (see docs on the renderEvent method)
+                });
+
+                // make the event draggable using jQuery UI
+                $(this).draggable({
+                    zIndex: 1111999,
+                    revert: true,      // will cause the event to go back to its
+                    revertDuration: 0  //  original position after the drag
+                });
+
+            });
+
+
+            /* initialize the calendar
+             -----------------------------------------------------------------*/
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
+
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                lang:'zh-cn',
+                editable: true,
+                droppable: true, // this allows things to be dropped onto the calendar
+                drop: function() {
+                    // is the "remove after drop" checkbox checked?
+                    if ($('#drop-remove').is(':checked')) {
+                        // if so, remove the element from the "Draggable Events" list
+                        $(this).remove();
+                    }
+                },
+                events: [
+                    {
+                        title: '日事件',
+                        start: new Date(y, m, 1)
+                    },
+                    {
+                        title: '长事件',
+                        start: new Date(y, m, d-5),
+                        end: new Date(y, m, d-2)
+                    },
+                    {
+                        id: 999,
+                        title: '重复事件',
+                        start: new Date(y, m, d-3, 16, 0),
+                        allDay: false
+                    },
+                    {
+                        id: 999,
+                        title: '重复事件',
+                        start: new Date(y, m, d+4, 16, 0),
+                        allDay: false
+                    },
+                    {
+                        title: '会议',
+                        start: new Date(y, m, d, 10, 30),
+                        allDay: false
+                    },
+                    {
+                        title: '午餐',
+                        start: new Date(y, m, d, 12, 0),
+                        end: new Date(y, m, d, 14, 0),
+                        allDay: false
+                    },
+                    {
+                        title: '生日',
+                        start: new Date(y, m, d+1, 19, 0),
+                        end: new Date(y, m, d+1, 22, 30),
+                        allDay: false
+                    },
+                    {
+                        title: '打开百度',
+                        start: new Date(y, m, 28),
+                        end: new Date(y, m, 29),
+                        url: 'https://www.baidu.com/'
+                    }
+                ]
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>

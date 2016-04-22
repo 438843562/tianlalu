@@ -1,0 +1,141 @@
+.tree{
+	width: 700px;
+	height: auto;
+	min-height: 500px;
+	margin: auto;
+	border: 1px solid #999;
+	padding: 20px;
+	padding-right: 0px;
+	background-color: #eee;
+}
+.tree label{
+	margin-bottom: 5px;
+	display: block;
+}
+
+.select{
+	margin:auto;
+	margin-bottom:50px;
+	width: 250px;
+}
+.select input{
+	float: left;
+}
+.select span{
+	float: right;
+	cursor: pointer;
+	background-color: #309840;
+    color: #FFF;
+    display: block;
+    width: 50px;
+    text-align: center;
+	height: 21px;
+    line-height: 21px;
+	border-radius: 3px;
+}
+
+.folder{
+	margin: 10px;
+	margin-right: 0px;
+	padding-left: 10px;
+}
+.file{
+	margin: 10px;
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+.show_hide{
+    width: 9px;
+    line-height: 9px;
+    height: 9px;
+    display: block;
+    float: left;
+    border: 1px solid #999;
+    margin-top: 3.3px;
+    margin-right: 10px;
+	cursor: pointer;
+}
+.delete{
+    margin-right: 50px;
+    float: right;
+	cursor: pointer;
+	display: none;
+	font-weight: bold;
+    font-size: 23px;
+}
+.add{
+    margin-right: 27px;
+    float: right;
+	cursor: pointer;
+	display: none;
+	font-weight: bold;
+    font-size: 23px;
+}
+.filename{
+	cursor: pointer;
+}
+
+.child_show div{
+	display: block;
+}
+.child_hide div{
+	display: none;
+}
+
+.pop_up_layer{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #F1F1F1;
+    top: 0px;
+    opacity: 0.5;
+}
+.notes{
+	position: absolute;
+    top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.t_content{
+	width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #FFF;
+	padding: 20px;
+}
+.content{
+	margin-top: 10px;
+    padding: 20px;
+    border-top: 1px solid #000;
+}
+.content div span{ 
+	margin-left: 53px;
+    margin-right: 6px;
+}
+.content div select{ 
+	margin-top: 19px;
+    margin-left: 8px;
+}
+.title{
+	margin-left: 91px;
+    font-weight: bold;
+}
+.footer{
+	margin-top: 130px;
+    padding: 20px;
+    border-top: 1px solid #000;
+	text-align: center;
+}
+.ok{
+	cursor: pointer;
+    margin-right: 20px;
+}
+.cancel{
+	cursor: pointer;
+    margin-left: 20px;
+}
+.pop{
+	display: none;
+}

@@ -1,0 +1,2029 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="utf-8">
+    <!-- 初始网页宽度为设置屏幕宽度，缩放级别为1.0，禁止用户缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- 设置360等双内核的浏览器渲染模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- 设置IE支持的最高模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!-- 禁止移动浏览器转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 网站标志 -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+    <title>Yun+后台主题UI | 高级插件</title>
+    <!-- 网站描述 -->
+    <meta name="description" content="Yun+是一个完全响应式的后台主题UI框架，基于Boostrap CSS框架，jQuery框架等各种开源前端框架开发的HTML5+CSS3前端主题UI框架，提供各种强大的常用UI组件，您可以基于此框架应用于您的网站开发，如网站后台，会员中心，论坛，CMS等等。">
+    <!-- 网站SEO关键词 -->
+    <meta name="keywords" content="Yun+UI,云+主题,云加后台主题UI,响应式的后台主题,Boostrap主题框架">
+    
+    <!-- 引入Bootstrap CSS框架 awesome字体-->
+    <link href="Css/bootstrap.min.css" rel="stylesheet">
+    <link href="Css/font-awesome.css" rel="stylesheet">
+
+    <!-- 所用到的插件样式 -->
+    <link href="Css/custom.css" rel="stylesheet">
+    <link href="Css/chosen.css" rel="stylesheet">
+    <link href="Css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="Css/cropper.min.css" rel="stylesheet">
+    <link href="Css/switchery.css" rel="stylesheet">
+    <link href="Css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="Css/jquery.nouislider.css" rel="stylesheet">
+    <link href="Css/datepicker3.css" rel="stylesheet">
+    <link href="Css/ion.rangeslider.css" rel="stylesheet">
+    <link href="Css/ion.rangeslider.skinflat.css" rel="stylesheet">
+    <link href="Css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="Css/clockpicker.css" rel="stylesheet">
+    <link href="Css/daterangepicker-bs3.css" rel="stylesheet">
+
+    <!-- CSS动画框架 -->
+    <link href="Css/animate.css" rel="stylesheet">
+    <!-- yun+UI css主文件 -->
+    <link href="Css/west263.css" rel="stylesheet">
+
+    <style>
+        .colorpicker-2x .colorpicker-saturation {
+            width: 200px;
+            height: 200px;
+        }
+        .colorpicker-2x .colorpicker-hue,
+        .colorpicker-2x .colorpicker-alpha {
+            width: 30px;
+            height: 200px;
+        }
+        .colorpicker-2x .colorpicker-color,
+        .colorpicker-2x .colorpicker-color div{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 侧边导航菜单 开始 -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img class="img-circle" src="Picture/profile_small.jpg" alt="image"></span>
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">Yun+ UI</strong>
+                                    </span>
+                                </span>
+                                <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">项目</a></li>
+                                <li><a href="contacts.html">联系我们</a></li>
+                                <li><a href="mailbox.html">信箱</li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">YUN+</div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-tabel">主面板</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="index.html">主面板</a></li><li><a href="dashboard_1.html">主面板示例一</a></li>
+                            <li><a href="dashboard_2.html">主面板示例二</a></li>
+                            <li><a href="dashboard_3.html">主面板示例三</a></li>
+                            <li><a href="dashboard_4.html">主面板示例四</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="layouts.html">
+                            <i class="fa fa-diamond"></i>
+                            <span class="nav-label">布局</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span class="nav-label">图表</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="graph_flot.html">Flot</a></li>
+                            <li><a href="graph_morris.html">Morris</a></li>
+                            <li><a href="graph_rickshaw.html">Rickshaw</a></li>
+                            <li><a href="graph_chartjs.html">Chart</a></li>
+                            <li><a href="graph_chartist.html">Chartist</a></li>
+                            <li><a href="graph_peity.html">Peity</a></li>
+                            <li><a href="graph_sparkline.html">Sparkline</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox.html">
+                            <i class="fa fa-envelope"></i>
+                            <span class="nav-label">信箱</span>
+                            <span class="label label-warning pull-right">16/24</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="mailbox.html">收件箱</a></li>
+                            <li><a href="mail_detail.html">查看邮件</a></li>
+                            <li><a href="mail_compose.html">写信</a></li>
+                            <li><a href="mail_template.html">邮件模板</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="metrics.html">
+                            <i class="fa fa-pie-chart"></i>
+                            <span class="nav-label">Metrics 图表</span>
+                            <span class="label label-primary pull-right">新</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">小部件</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="index.html#">
+                            <i class="fa fa-edit"></i>
+                            <span class="nav-label">表单</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="form_basic.html">基本表单</a></li>
+                            <li class="active"><a href="form_advanced.html">高级插件</a></li>
+                            <li><a href="form_wizard.html">表单向导</a></li>
+                            <li><a href="form_file_upload.html">文件上传</a></li>
+                            <li><a href="form_editors.html">文本编辑</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <i class="fa fa-desktop"></i>
+                            <span class="nav-label">App 页面</span>
+                            <span class="pull-right label label-primary">专用</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="contacts.html">联系人</a></li>
+                            <li><a href="profile.html">个人资料</a></li>
+                            <li><a href="project.html">项目</a></li>
+                            <li><a href="project_detail.html">项目详情</a></li>
+                            <li><a href="teams_board.html">小组</a></li>
+                            <li><a href="social_feed.html">社交管理</a></li>
+                            <li><a href="clients.html">客户管理</a></li>
+                            <li><a href="full_height.html">邮件阅读</a></li>
+                            <li><a href="file_manager.html">文件管理</a></li>
+                            <li><a href="calendar.html">日历</a></li>
+                            <li><a href="issue_tracker.html">问题跟踪</a></li>
+                            <li><a href="blog.html">博客</a></li>
+                            <li><a href="article.html">文章</a></li>
+                            <li><a href="faq.html">帮助中心</a></li>
+                            <li><a href="timeline.html">时间轴</a></li>
+                            <li><a href="pin_board.html">标签墙</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-files-o"></i>
+                            <span class="nav-label">其它页面</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="search_results.html">搜索页面</a></li>
+                            <li><a href="lockscreen.html">屏锁</a></li>
+                            <li><a href="invoice.html">票据</a></li>
+                            <li><a href="login.html">登录页面</a></li>
+                            <li><a href="login_two_columns.html">登录页面 v.2</a></li>
+                            <li><a href="forgot_password.html">找回密码</a></li>
+                            <li><a href="register.html">注册页面</a></li>
+                            <li><a href="404.html">404 页面</a></li>
+                            <li><a href="500.html">500 页面</a></li>
+                            <li><a href="empty_page.html">空白页面</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-globe"></i>
+                            <span class="nav-label">各种页面</span>
+                            <span class="label label-info pull-right">新</span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="toastr_notifications.html">通知</a></li>
+                            <li><a href="nestable_list.html">折叠列表</a></li>
+                            <li><a href="agile_board.html">任务清单</a></li>
+                            <li><a href="timeline_2.html">时间轴 v.2</a></li>
+                            <li><a href="diff.html">文本对比</a></li>
+                            <li><a href="sweetalert.html">SweetAlert对话框</a></li>
+                            <li><a href="idle_timer.html">Idle timer</a></li>
+                            <li><a href="spinners.html">加载动画</a></li>
+                            <li><a href="tinycon.html">Live favicon</a></li>
+                            <li><a href="code_editor.html">代码编辑</a></li>
+                            <li><a href="modal_window.html">模态框</a></li>
+                            <li><a href="forum_main.html">论坛</a></li>
+                            <li><a href="validation.html">输入验证</a></li>
+                            <li><a href="tree_view.html">树形视图</a></li>
+                            <li><a href="chat_view.html">聊天视图</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">UI元素</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="typography.html">排版</a></li>
+                            <li><a href="icons.html">图标</a></li>
+                            <li><a href="draggable_panels.html">拖动面板</a></li>
+                            <li><a href="buttons.html">按钮</a></li>
+                            <li><a href="video.html">视频</a></li>
+                            <li><a href="tabs_panels.html">面板</a></li>
+                            <li><a href="tabs.html">选项卡</a></li>
+                            <li><a href="notifications.html">通知 & 提示</a></li>
+                            <li><a href="badges_labels.html">徽章, 标签, 进度条</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">栅格</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-table"></i>
+                            <span class="nav-label">表格</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="table_basic.html">基本表格</a></li>
+                            <li><a href="table_data_tables.html">DataTables</a></li>
+                            <li><a href="table_foo_table.html">FooTables</a></li>
+                            <li><a href="jq_grid.html">jqGrid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="nav-label">电子商城</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="ecommerce_products_grid.html">产品展示</a></li>
+                            <li><a href="ecommerce_product_list.html">产品列表</a></li>
+                            <li><a href="ecommerce_product.html">产品编辑</a></li>
+                            <li><a href="ecommerce-orders.html">订单</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-picture-o"></i>
+                            <span class="nav-label">相册</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="basic_gallery.html">基本图库</a></li>
+                            <li><a href="carousel.html">图片切换</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sitemap"></i>
+                            <span class="nav-label">菜单</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">二级菜单项</a></li>
+                            <li>
+                                <a href="#">三级菜单 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="#">三级菜单项</a></li>
+                                    <li><a href="#">三级菜单项</a></li>
+                                    <li><a href="#">三级菜单项</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="css_animation.html">
+                            <i class="fa fa-magic"></i>
+                            <span class="nav-label">CSS 动画</span>
+                            <span class="label label-info pull-right">62</span>
+                        </a>
+                    </li>
+                    <li class="landing_link">
+                        <a target="_blank" href="landing.html">
+                            <i class="fa fa-star"></i>
+                            <span class="nav-label">载入页面</span>
+                            <span class="label label-warning pull-right">新</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>                
+        </nav><!-- 侧边导航菜单 结束 -->
+
+        <!-- 右侧内容 开始 -->
+        <div class="gray-bg back-change" id="page-wrapper">
+            <!-- 右侧顶部导航div 开始 -->
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i>
+                        </a>
+                        <form class="navbar-form-custom" action="search_results.html" role="search">
+                            <div class="form-group">
+                                <input class="form-control" id="top-search" name="top-search" type="text" placeholder="请输入您要查找的内容……">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li><span class="m-r-sm text-muted welcome-message">欢迎来到 YUN+ 后台UI主题</span></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="pull-left" href="profile.html">
+                                            <img class="img-circle" src="Picture/a7.jpg" alt="image">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46h前</small>
+                                            <strong>国民老公</strong>又在微博放料啦，某某女演员……<br>
+                                            <small class="text-muted">3 前 7:58 下午 - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="Picture/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">5小时前</small>
+                                            <strong>股票大跌</strong> 小马哥不再是首富了。 <strong>———来自财经网</strong>. <br>
+                                            <small class="text-muted">昨天 1:21 下午 - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="Picture/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right">23小时前</small>
+                                            <strong>风姐</strong> 爱上 <strong>小马哥啦！</strong>. <br>
+                                            <small class="text-muted">2天前 2:30 上午 - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i> <strong>查看全部消息</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                                <i class="fa fa-bell"></i>
+                                <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 你有8条未读消息
+                                            <span class="pull-right text-muted small">4 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="grid_options.html">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> 服务器重启
+                                            <span class="pull-right text-muted small">4 分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看全部提醒</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- 右侧顶部导航div 结束 -->
+
+            <!-- 右侧内容div .wrapper 开始 -->
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>高级插件</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a>表单</a></li>
+                        <li class="active"><strong>高级插件</strong></li>
+                    </ol>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>旋钮输入 <small>http://anthonyterrien.com/knob/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h3> 旋钮输入-示例 </h3>
+                                <p>轻松构建旋钮输入</p>
+                                <div class="text-center">
+                                    <small> 简单示例 </small><br/><br/>
+                                    <div class="m-r-md inline">
+                                        <input type="text" value="75" class="dial m-r-sm" data-fgColor="#1AB394" data-width="85" data-height="85" />
+                                    </div>
+                                    <div class="m-r-md inline">
+                                        <input type="text" value="25" class="dial m-r" data-fgColor="#1AB394" data-width="85" data-height="85"/>
+                                    </div>
+                                    <div class="m-r-md inline">
+                                        <input type="text" value="50" class="dial m-r" data-fgColor="#1AB394" data-width="85" data-height="85"/>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <small>动态输入示例</small><br/><br/>
+                                    <div class="m-r-md inline">
+                                        <input type="text" value="75" class="dial m-r-sm" data-fgColor="#ED5565" data-width="85" data-height="85" data-cursor=true data-thickness=.3/>
+                                    </div>
+                                    <div class="m-r-md inline">
+                                        <input type="text" value="25" class="dial m-r" data-fgColor="#ED5565" data-width="85" data-height="85" data-step="1000" data-min="-15000" data-max="15000" data-displayPrevious=true/>
+                                    </div>
+                                    <div class="m-r-md inline">
+                                    <input type="text" value="60" class="dial m-r" data-fgColor="#ED5565" data-width="85" data-height="85" data-angleOffset=-125 data-angleArc=250 />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>下拉列表 <small>http://harvesthq.github.io/chosen/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <p>下拉列表插件，基于jQuery</p>
+                                <div class="form-group">
+                                    <label class="font-noraml">基本示例</label>
+                                    <div class="input-group col-sm-12">
+                                        <select class="chosen-select" data-placeholder="选择省份..." tabindex="-1" style="width:310px;">
+                                            <option value="">请选择省份</option>
+                                            <option value="110000" hassubinfo="true">北京</option>
+                                            <option value="120000" hassubinfo="true">天津</option>
+                                            <option value="130000" hassubinfo="true">河北省</option>
+                                            <option value="140000" hassubinfo="true">山西省</option>
+                                            <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                                            <option value="210000" hassubinfo="true">辽宁省</option>
+                                            <option value="220000" hassubinfo="true">吉林省</option>
+                                            <option value="230000" hassubinfo="true">黑龙江省</option>
+                                            <option value="310000" hassubinfo="true">上海</option>
+                                            <option value="320000" hassubinfo="true">江苏省</option>
+                                            <option value="330000" hassubinfo="true">浙江省</option>
+                                            <option value="340000" hassubinfo="true">安徽省</option>
+                                            <option value="350000" hassubinfo="true">福建省</option>
+                                            <option value="360000" hassubinfo="true">江西省</option>
+                                            <option value="370000" hassubinfo="true">山东省</option>
+                                            <option value="410000" hassubinfo="true">河南省</option>
+                                            <option value="420000" hassubinfo="true">湖北省</option>
+                                            <option value="430000" hassubinfo="true">湖南省</option>
+                                            <option value="440000" hassubinfo="true">广东省</option>
+                                            <option value="450000" hassubinfo="true">广西壮族自治区</option>
+                                            <option value="460000" hassubinfo="true">海南省</option>
+                                            <option value="500000" hassubinfo="true">重庆</option>
+                                            <option value="510000" hassubinfo="true">四川省</option>
+                                            <option value="520000" hassubinfo="true">贵州省</option>
+                                            <option value="530000" hassubinfo="true">云南省</option>
+                                            <option value="540000" hassubinfo="true">西藏自治区</option>
+                                            <option value="610000" hassubinfo="true">陕西省</option>
+                                            <option value="620000" hassubinfo="true">甘肃省</option>
+                                            <option value="630000" hassubinfo="true">青海省</option>
+                                            <option value="640000" hassubinfo="true">宁夏回族自治区</option>
+                                            <option value="650000" hassubinfo="true">新疆维吾尔自治区</option>
+                                            <option value="710000" hassubinfo="true">台湾省</option>
+                                            <option value="810000" hassubinfo="true">香港特别行政区</option>
+                                            <option value="820000" hassubinfo="true">澳门特别行政区</option>
+                                            <option value="990000" hassubinfo="true">海外</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-noraml">多选示例</label>
+                                    <div class="input-group">
+                                        <select class="chosen-select" data-placeholder="选择省份..." tabindex="-1" multiple="" style="width:310px;">
+                                            <option value=""></option>
+                                            <option value="110000" hassubinfo="true">北京</option>
+                                            <option value="120000" hassubinfo="true">天津</option>
+                                            <option value="130000" hassubinfo="true">河北省</option>
+                                            <option value="140000" hassubinfo="true">山西省</option>
+                                            <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                                            <option value="210000" hassubinfo="true">辽宁省</option>
+                                            <option value="220000" hassubinfo="true">吉林省</option>
+                                            <option value="230000" hassubinfo="true">黑龙江省</option>
+                                            <option value="310000" hassubinfo="true">上海</option>
+                                            <option value="320000" hassubinfo="true">江苏省</option>
+                                            <option value="330000" hassubinfo="true">浙江省</option>
+                                            <option value="340000" hassubinfo="true">安徽省</option>
+                                            <option value="350000" hassubinfo="true">福建省</option>
+                                            <option value="360000" hassubinfo="true">江西省</option>
+                                            <option value="370000" hassubinfo="true">山东省</option>
+                                            <option value="410000" hassubinfo="true">河南省</option>
+                                            <option value="420000" hassubinfo="true">湖北省</option>
+                                            <option value="430000" hassubinfo="true">湖南省</option>
+                                            <option value="440000" hassubinfo="true">广东省</option>
+                                            <option value="450000" hassubinfo="true">广西壮族自治区</option>
+                                            <option value="460000" hassubinfo="true">海南省</option>
+                                            <option value="500000" hassubinfo="true">重庆</option>
+                                            <option value="510000" hassubinfo="true">四川省</option>
+                                            <option value="520000" hassubinfo="true">贵州省</option>
+                                            <option value="530000" hassubinfo="true">云南省</option>
+                                            <option value="540000" hassubinfo="true">西藏自治区</option>
+                                            <option value="610000" hassubinfo="true">陕西省</option>
+                                            <option value="620000" hassubinfo="true">甘肃省</option>
+                                            <option value="630000" hassubinfo="true">青海省</option>
+                                            <option value="640000" hassubinfo="true">宁夏回族自治区</option>
+                                            <option value="650000" hassubinfo="true">新疆维吾尔自治区</option>
+                                            <option value="710000" hassubinfo="true">台湾省</option>
+                                            <option value="810000" hassubinfo="true">香港特别行政区</option>
+                                            <option value="820000" hassubinfo="true">澳门特别行政区</option>
+                                            <option value="990000" hassubinfo="true">海外</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>范围滑块 <small>https://github.com/IonDen/ion.rangeSlider</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h3>滑块 </h3>
+                                <p> 指定范围内选择</p>
+                                <div class="m-b-sm">
+                                    <small ><strong>示例1: </strong> 设置范围值为0-5000, 后缀 "+" 表示最大值, 设置滑块类型为双向滑动, 人民币符号作为前缀, 开启刻度 </small>
+                                </div>
+                                <div id="ionrange_1"></div>
+
+                                <div class="m-b-sm m-t">
+                                    <small ><strong>示例2: </strong> 设置范围值为0-10, 步长: 0.1, 开启刻度 </small>
+                                </div>
+                                <div id="ionrange_2"></div>
+
+                                <div class="m-b-sm m-t">
+                                    <small ><strong>示例3: </strong> 设置范围值为-50 ～ +50, 设置初始值为0, 摄氏度符号为后缀，开启刻度 </small>
+                                </div>
+                                <div id="ionrange_3"></div>
+
+                                <div class="m-b-sm m-t">
+                                    <small ><strong>示例4: </strong> 使用月份名称作为滑块显示的数值. 月份名称用数组储存. 滑块根据数组的长度自动设置最小最大值的范围, 步长将变为一, 可选择数组中任意一个值 </small>
+                                </div>
+                                <div id="ionrange_4"></div>
+
+                                <div>
+                                <a class="btn btn-white pull-right btn-sm" href="https://github.com/IonDen/ion.rangeSlider" target="_blank">查阅API</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>范围滑块 <small>http://refreshless.com/nouislider/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h3>范围滑块 </h3>
+                                <p简单干净的范围滑块</p>
+                                <div class="row m-b-lg">
+                                    <div class="col-lg-12">
+                                        <div id="drag-fixed" class="slider_red"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p class="font-bold">简单示例</p>
+                                        <div id="basic_slider"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="font-bold">指定范围选择</p>
+                                        <div id="range_slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>日期选择器 <small>https://github.com/eternicode/bootstrap-datepicker</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                                <div class="ibox-content">
+                                    <h3>日期选择器</h3>
+                                    <p>通过鼠标选择的日期选择器</p>
+                                    <div class="form-group" id="data_1">
+                                        <label class="font-noraml">简单的日期选择器</label>
+                                        <div class="input-group date">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                            <input class="form-control" type="text" value="2015年10月01日">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="data_2">
+                                        <label class="font-noraml">年视图</label>
+                                        <div class="input-group date">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                            <input class="form-control" type="text" value="2015年10月01日">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="data_3">
+                                        <label class="font-noraml">十年视图</label>
+                                        <div class="input-group date">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                            <input class="form-control" type="text" value="2015-10-01">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="data_4">
+                                        <label class="font-noraml">月视图</label>
+                                        <div class="input-group date">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                            <input class="form-control" type="text" value="2015年10月01日">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="data_5">
+                                        <label class="font-noraml">范围选择</label>
+                                        <div class="input-daterange input-group" id="datepicker">
+                                            <input class="form-control input-sm" name="start" type="text" value="2015年10月01日">
+                                            <span class="input-group-addon">到</span>
+                                            <input class="form-control input-sm" name="end" type="text" value="2015年10月31日">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- 日期选择 结束 -->
+
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>时间选择器 <small>http://weareoutman.github.io/clockpicker/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h3>时间选择器 </h3>
+                                <p时钟样式(基于Bootstrap or jQuery)</p>
+                                <div class="input-group clockpicker" data-autoclose="true">
+                                    <input class="form-control" type="text" value="09:30">
+                                    <span class="input-group-addon">
+                                        <span class="fa fa-clock-o"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>日期范围 <small>http://www.daterangepicker.com/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h3>日期范围选择器</h3>
+                                <p>一个选择日期范围的JavaScript控件, 基于Boostrap CSS框架</p>
+                                <h4>基本示例</h4>
+                                <p>日期范围选择器绑定到一个文本输入框。它将使用当前值来初始化，如果选择新的日期，更新输入</p>
+                                <input class="form-control" name="daterange" type="text" value="2015-10-01 ~ 2015-10-31">
+                                <h4>全部选项示例</h4>
+                                <div class="form-control" id="reportrange">
+                                    <i class="fa fa-calendar"></i>
+                                    <span></span>
+                                    <b class="caret"></b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>固定格式输入 <small>http://jasny.github.io/bootstrap/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h3>固定格式输入</h3>
+                                <p>按指定格式格式化输入文本</p>
+                                <form class="form-horizontal m-t-md" action="form_advanced.html#">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">ISBN 1</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="">
+                                            <span class="help-block">999-99-999-9999-9</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">ISBN 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="999 99 999 9999 9" placeholder="">
+                                            <span class="help-block">999 99 999 9999 9</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">ISBN 3</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="999/99/999/9999/9" placeholder="">
+                                            <span class="help-block">999/99/999/9999/9</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">IPV4</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="999.999.999.9999" placeholder="">
+                                            <span class="help-block">192.168.100.200</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">税号</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="99-9999999" placeholder="">
+                                            <span class="help-block">99-9999999</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">电话</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="">
+                                            <span class="help-block">(999) 999-9999</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">货币</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="￥ 999,999,999.99" placeholder="">
+                                            <span class="help-block">￥ 999,999,999.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">日期</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" data-mask="9999-99-99" placeholder="">
+                                            <span class="help-block">yyyy-mm-dd</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>切换开关 <small>http://abpetkov.github.io/switchery/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h3>切换开关</h3>
+                                        <p>IOS7样式的切换开关</p>
+                                        <input type="checkbox" class="js-switch" checked>
+                                        <input type="checkbox" class="js-switch_2" checked>
+                                        <br/>
+                                        <br/>
+                                        <input type="checkbox" class="js-switch_3">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3>Custom 切换开关</h3>
+                                        <p>纯CSS3实现的切换开关</p>
+                                        <div class="switch">
+                                            <div class="onoffswitch">
+                                                <input type="checkbox" checked class="onoffswitch-checkbox" id="example1">
+                                                <label class="onoffswitch-label" for="example1">
+                                                    <span class="onoffswitch-inner"></span>
+                                                    <span class="onoffswitch-switch"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="switch">
+                                            <div class="onoffswitch">
+                                                <input type="checkbox" class="onoffswitch-checkbox" id="example2">
+                                                <label class="onoffswitch-label" for="example2">
+                                                    <span class="onoffswitch-inner"></span>
+                                                    <span class="onoffswitch-switch"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>拾色器 <small>http://mjolnic.github.io/bootstrap-colorpicker/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a></li>
+                                        <li><a href="#">选项 2</a></li>
+                                    </ul>
+                                    <a class="colse-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <div class="form-group">
+                                            <h5>普通的16进制颜色</h5>
+                                            <input class="form-control demo demo-auto" type="text" value="#5367ce">
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>作为部件</h5>
+                                            <div class="input-group demo demo-auto">
+                                                <input class="form-control" type="text" value="#3bc2ed">
+                                                <span class="input-group-addon"><i></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="well text-center">
+                                                <a class="btn small demo demo-auto" id="demo_apidemo" data-color="rgb(255, 255, 255)" href="#demo_apidemo">改变背景色</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>支持透明颜色</h5>
+                                            <input class="form-control demo demo-auto" id="demo_transparent" type="text" value="#333333">
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>水平模式</h5>
+                                            <input class="form-control demo demo-auto" id="demo_forceformat" data-horizontal="true" data-color="rgba" type="text" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>内联模式</h5>
+                                            <div class="well">
+                                                <div class="demo demo-auto inl-bl" id="demo_cont" data-container="#demo_cont" data-color="rgba(150,216,62,0.55)" data-inline="true"></div>
+                                                <div class="demo demo-auto inl-bl" data-container="true" data-color="rgb(50,216,62)" data-inline="true"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>Boostrap颜色</h5>
+                                            <input class="form-control demo demo-auto" id="demo_selectors" type="text" value="#success">
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>Custom小部件</h5>
+                                            <input class="form-control demo" id="demo_size" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>禁用/启用</h5>
+                                            <div class="well">
+                                                <div class="input-group demo demo-auto colorpicker-component colorpicker-element" id="demo_endis" >
+                                                    <input class="form-control" type="text" value="#56baba" disabled>
+                                                    <span class="input-group-addon"><i></i></span>
+                                                </div>
+                                                <br>
+                                                <a class="btn btn-sm btn-success enable-button" id="enable-btn" href="#enable-btn">启用</a>
+                                                <a class="btn btn-sm btn-default disable-button" id="disable-btn" href="#disable-btn">禁用</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>弹出层</h5>
+                                            <div class="well">
+                                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">显示</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="form-group">
+                                            <a class="btn btn-danger demo-destroy" href="#">
+                                                <i class="fa fa-remove"></i> 销毁插件
+                                            </a>
+                                            <div class="space-15"></div>
+                                            <a class="btn btn-primary demo-create" href="#">
+                                                <i class="fa fa-plus"></i> 重建插件
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title  back-change">
+                                <h5>单选复选框</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">选项 1</a>
+                                        </li>
+                                        <li><a href="#">选项 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <h3>基本</h3>
+                                            <p>
+                                                支持使用Bootstrap内置颜色，如：<code>.checkbox-primary</code>, <code>.checkbox-info</code>等。
+                                            </p>
+                                            <div class="checkbox">
+                                                <input id="checkbox1" type="checkbox">
+                                                <label for="checkbox1"> Default</label>
+                                            </div>
+                                            <div class="checkbox checkbox-primary">
+                                                <input id="checkbox2" type="checkbox" checked="">
+                                                <label for="checkbox2"> Primary</label>
+                                            </div>
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox3" type="checkbox">
+                                                <label for="checkbox3"> Success</label>
+                                            </div>
+                                            <div class="checkbox checkbox-info">
+                                                <input id="checkbox4" type="checkbox">
+                                                <label for="checkbox4"> Info</label>
+                                            </div>
+                                            <div class="checkbox checkbox-warning">
+                                                <input id="checkbox5" type="checkbox" checked="">
+                                                <label for="checkbox5"> Warning</label>
+                                            </div>
+                                            <div class="checkbox checkbox-danger">
+                                                <input id="checkbox6" type="checkbox" checked="">
+                                                <label for="checkbox6"> Danger</label>
+                                            </div>
+                                            <p>无文本</p>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="singleCheckbox1" value="option1" aria-label="Single checkbox One">
+                                                <label></label>
+                                            </div>
+                                            <div class="checkbox checkbox-primary">
+                                                <input type="checkbox" id="singleCheckbox2" value="option2" checked="" aria-label="Single checkbox Two">
+                                                <label></label>
+                                            </div>
+                                            <p>行级显示</p>
+                                            <div class="checkbox checkbox-inline">
+                                                <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label for="inlineCheckbox1"> 选项1 </label>
+                                            </div>
+                                            <div class="checkbox checkbox-success checkbox-inline">
+                                                <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                                                <label for="inlineCheckbox2"> 选项2 </label>
+                                            </div>
+                                            <div class="checkbox checkbox-inline">
+                                                <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label for="inlineCheckbox3"> 选项3 </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <h3> 圆形显示 </h3>
+                                            <p>
+                                                <code>.checkbox-circle</code> 可实现圆形显示
+                                            </p>
+                                            <div class="checkbox checkbox-circle">
+                                                <input id="checkbox7" type="checkbox">
+                                                <label for="checkbox7"> 示例 1</label>
+                                            </div>
+                                            <div class="checkbox checkbox-info checkbox-circle">
+                                                <input id="checkbox8" type="checkbox" checked="">
+                                                <label for="checkbox8"> 示例 2</label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <h3> 单选框 </h3>
+                                            <p>
+                                                支持使用Bootstrap内置颜色，如：<code>.radio-primary</code>, <code>.radio-danger</code> 等。
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="radio">
+                                                        <input type="radio" name="radio1" id="radio1" value="option1" checked="">
+                                                        <label for="radio1"> 文本 1</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" name="radio1" id="radio2" value="option2">
+                                                        <label for="radio2"> 文本 2 </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="radio radio-danger">
+                                                        <input type="radio" name="radio2" id="radio3" value="option1">
+                                                        <label for="radio3"> 文本 3 </label>
+                                                    </div>
+                                                    <div class="radio radio-danger">
+                                                        <input type="radio" name="radio2" id="radio4" value="option2" checked="">
+                                                        <label for="radio4"> 文本 4 </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>无文本</p>
+                                            <div class="radio">
+                                                <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One">
+                                                <label></label>
+                                            </div>
+                                            <div class="radio radio-success">
+                                                <input type="radio" id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two">
+                                                <label></label>
+                                            </div>
+                                            <p>行级显示</p>
+                                            <div class="radio radio-info radio-inline">
+                                                <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+                                                <label for="inlineRadio1"> 选项 1 </label>
+                                            </div>
+                                            <div class="radio radio-inline">
+                                                <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                <label for="inlineRadio2"> 选项 2 </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title  back-change">
+                                <h5>图片裁剪 <small>http://fengyuanchen.github.io/cropper/</small></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="form_advanced.html#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="form_advanced.html#">选项 1</a></li>
+                                        <li><a href="form_advanced.html#">选项 2</a></li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <p>一款简单的jQuery图片裁剪插件</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="image-crop">
+                                            <img src="Picture/p3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>图片裁剪预览</h4>
+                                        <div class="img-preview img-preview-sm"></div>
+                                        <h4>基本用法： </h4>
+                                        <p>
+                                            你可以选择新图片上传，然后下载裁剪后的图片
+                                        </p>
+                                        <div class="btn-group">
+                                            <label title="Upload image file" for="inputImage" class="btn btn-primary">
+                                                <input type="file" accept="image/*" name="file" id="inputImage" class="hide">
+                                                上传新图
+                                            </label>
+                                            <label title="Donload image" id="download" class="btn btn-primary">下载</label>
+                                        </div>
+                                        <h4>其它用法</h4>
+                                        <p>
+                                            您可以使用 <code>$({image}).cropper(options)</code>来配置插件
+                                        </p>
+                                        <div class="btn-group">
+                                            <button class="btn btn-white" id="zoomIn" type="button">放大</button>
+                                            <button class="btn btn-white" id="zoomOut" type="button">缩小</button>
+                                            <button class="btn btn-white" id="rotateLeft" type="button">左旋转</button>
+                                            <button class="btn btn-white" id="rotateRight" type="button">右旋转</button>
+                                            <button class="btn btn-warning" id="setDrag" type="button">裁剪</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- 右侧内容div .wrapper 结束 -->
+            <div class="footer">
+                <div class="pull-right">
+                    100000个访问<strong>总250w</strong>个访问.
+                </div>
+                <div>
+                    <strong>Copyright</strong> west263.com &copy; 2015
+                </div>
+            </div>
+        </div><!-- 右侧内容 结束 -->
+
+        <!-- modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myModalLabel">选择颜色</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group colorpicker-component demo demo-auto colorpicker-element">
+                            <input class="form-control" type="text" value="#e63ee0">
+                            <span class="input-group-addon"><i></i></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- modal end -->
+
+        <!-- 右上角隐藏通知，设置页 -->
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+                <ul class="nav nav-tabs navs-3">
+                    <li class="active">
+                        <a data-toggle="tab" href="dashboard_2.html#tab-1"> 通知 </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="dashboard_2.html#tab-2"> 任务 </a>
+                    </li>
+                    <li class="">
+                        <a data-toggle="tab" href="dashboard_2.html#tab-3"><i class="fa fa-gear"></i></a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-comments-o"></i> 最新通知 </h3>
+                            <small><i class="fa fa-tim"></i> 您当前有10条未读通知.</small>
+                        </div>
+
+                        <div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a1.jpg">
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        Yun+项目还要很多页面需要测试。
+                                        <br>
+                                        <small class="text-muted">今天 4:21 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a2.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        今天来面试美工的MM很不错，小刘你负责通知她明天到公司人事部办入职手续。
+                                        <br>
+                                        <small class="text-muted">今天 2:45 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        朋友，那不是懒，懒是可以克服的。你只是脑子比较弱(笨)，没办法长时间经 受高强度的思考，去搞逻辑太复杂的东西和处理太多的信息量。
+                                        <br>
+                                        <small class="text-muted">昨天 1:10 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a4.jpg">
+                                    </div>
+
+                                    <div class="media-body">
+                                        很想和你去吹吹风，吹掉我给你的不愉快，只留下我给你的开心。
+                                        <br>
+                                        <small class="text-muted">昨天 8:37 上午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a8.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        单身很惭愧，恋爱很陶醉，结婚则太贵，离婚是因为不想浪费，再婚是因为无路可退。爱情没有不对，恋爱还要干脆，不要因为一只玫瑰而放弃整个春天的约会。
+                                        <br>
+                                        <small class="text-muted">今天 4:21 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a7.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        世上有两种女孩最可爱，一种是漂亮；一种是聪慧，而你是聪明的漂亮女孩。
+                                        <br>
+                                        <small class="text-muted">昨天 2:45 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="dashboard_2.html#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="Picture/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        “神雕侠侣”恋情曝光 同房过夜被拍。
+                                        <br>
+                                        <small class="text-muted">昨天 1:10 下午</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-cube"></i> 最新任务</h3>
+                            <small><i class="fa fa-tim"></i> 您当前有16个任务。 10个已完成。</small>
+                        </div>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">6小时前</div>
+                                    <h4>后台会员模块</h4>
+                                    按进度完成后台会员模块开发。
+
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>后台订单模块bug处理 </h4>
+                                    bug描述：订单模块支付未完成的订单会令订单金额变为负数；
+                                    优先级：重大bug。
+                                    <div class="small">完成进度: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>开发国庆促销专题页面</h4>
+                                    同美工协同完成开发国庆促销专题页面。
+
+                                    <div class="small">完成进度: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <span class="label label-primary pull-right">新</span>
+                                    <h4>APP页面测试</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    新开发的APP各页面功能测试，完成后整理报告给项目经理。
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard_2.html#">
+                                    <div class="small pull-right m-t-xs">9个小时前</div>
+                                    <h4>新功能开发</h4>
+                                    订单系统添加一个一键下单功能。
+
+                                    <div class="small">完成进度: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">任务截止: 4:00 下午 - 12.06.2015</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> 设置 </h3>
+                        </div>
+
+                        <div class="setings-item">
+                    <span>
+                        显示通知
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                    <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        隐藏聊天窗口
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                                    <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        清空历史记录
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                    <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        显示聊天窗口
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                    <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        显示在线用户
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                    <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        全局搜索
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                    <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        每日动态
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                    <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <h4>设置</h4>
+                            <div class="small">
+                                您可以从这里进行一些常规设置，当然这只是一个演示页面。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 右上角隐藏通知，设置页 end -->
+    </div>
+
+    <!-- 引入主要jQuery 等js框架 -->
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.metismenu.js"></script>
+    <script src="Scripts/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="Scripts/inspinia.js"></script>
+    <script src="Scripts/pace.min.js"></script>
+
+    <!-- Chosen -->
+    <script src="Scripts/chosen.jquery.js"></script>
+
+   <!-- JSKnob -->
+   <script src="Scripts/jquery.knob.js"></script>
+
+   <!-- Input Mask-->
+    <script src="Scripts/jasny-bootstrap.min.js"></script>
+
+   <!-- Data picker -->
+   <script src="Scripts/bootstrap-datepicker.js"></script>
+   <script src="Scripts/bootstrap-datepicker.zh-cn.js"></script>
+
+   <!-- NouSlider -->
+   <script src="Scripts/jquery.nouislider.min.js"></script>
+
+   <!-- Switchery -->
+   <script src="Scripts/switchery.js"></script>
+
+    <!-- IonRangeSlider -->
+    <script src="Scripts/ion.rangeslider.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="Scripts/icheck.min.js"></script>
+
+    <!-- Color picker -->
+    <script src="Scripts/bootstrap-colorpicker.min.js"></script>
+
+    <!-- Clock picker -->
+    <script src="Scripts/clockpicker.js"></script>
+
+    <!-- Image cropper -->
+    <script src="Scripts/cropper.min.js"></script>
+
+    <!-- Date range use moment.js same as full calendar plugin -->
+    <script src="Scripts/moment.min.js"></script>
+
+    <!-- Date range picker -->
+    <script src="Scripts/daterangepicker.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            var $image = $(".image-crop > img")
+            $($image).cropper({
+                aspectRatio: 1.618,
+                preview: ".img-preview",
+                done: function(data) {
+                    // Output the result data for cropping image.
+                }
+            });
+
+            var $inputImage = $("#inputImage");
+            if (window.FileReader) {
+                $inputImage.change(function() {
+                    var fileReader = new FileReader(),
+                            files = this.files,
+                            file;
+
+                    if (!files.length) {
+                        return;
+                    }
+
+                    file = files[0];
+
+                    if (/^image\/\w+$/.test(file.type)) {
+                        fileReader.readAsDataURL(file);
+                        fileReader.onload = function () {
+                            $inputImage.val("");
+                            $image.cropper("reset", true).cropper("replace", this.result);
+                        };
+                    } else {
+                        showMessage("Please choose an image file.");
+                    }
+                });
+            } else {
+                $inputImage.addClass("hide");
+            }
+
+            $("#download").click(function() {
+                window.open($image.cropper("getDataURL"));
+            });
+
+            $("#zoomIn").click(function() {
+                $image.cropper("zoom", 0.1);
+            });
+
+            $("#zoomOut").click(function() {
+                $image.cropper("zoom", -0.1);
+            });
+
+            $("#rotateLeft").click(function() {
+                $image.cropper("rotate", 45);
+            });
+
+            $("#rotateRight").click(function() {
+                $image.cropper("rotate", -45);
+            });
+
+            $("#setDrag").click(function() {
+                $image.cropper("setDragMode", "crop");
+            });
+
+            $('#data_1 .input-group.date').datepicker({
+                todayBtn: "linked",
+                language: "zh-CN",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
+            $('#data_2 .input-group.date').datepicker({
+                startView: 1,
+                todayBtn: "linked",
+                language: "zh-CN",
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true,
+                format: "yyyy年mm月dd日"
+            });
+
+            $('#data_3 .input-group.date').datepicker({
+                startView: 2,
+                todayBtn: "linked",
+                language: "zh-CN",
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true,
+                format: "yyyy-mm-dd"
+            });
+
+            $('#data_4 .input-group.date').datepicker({
+                minViewMode: 1,
+                language: "zh-CN",
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true
+            });
+
+            $('#data_5 .input-daterange').datepicker({
+                keyboardNavigation: false,
+                language: "zh-CN",
+                forceParse: false,
+                autoclose: true
+            });
+
+            var elem = document.querySelector('.js-switch');
+            var switchery = new Switchery(elem, { color: '#1AB394' });
+
+            var elem_2 = document.querySelector('.js-switch_2');
+            var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+
+            var elem_3 = document.querySelector('.js-switch_3');
+            var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
+
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green'
+            });
+
+            function createColorpickers() {
+                $('.demo-auto').colorpicker();
+                // Horizontal mode
+                $('#demo_forceformat').colorpicker();
+                // Boostrap color
+                $('#demo_selectors').colorpicker({
+                      colorSelectors: {
+                        'default': '#777777',
+                        'primary': '#337ab7',
+                        'success': '#5cb85c',
+                        'info': '#5bc0de',
+                        'warning': '#f0ad4e',
+                        'danger': '#d9534f'
+                    }
+                });
+                $('#demo_size').colorpicker({
+                    customClass: 'colorpicker-2x',
+                    sliders: {
+                        saturation: {
+                          maxLeft: 200,
+                          maxTop: 200
+                        },
+                        hue: {
+                          maxTop: 200
+                        },
+                        alpha: {
+                          maxTop: 200
+                        }
+                    }
+                });
+                // 启用 or 禁用
+                $(".disable-button").click(function(e) {
+                  e.preventDefault();
+                  $("#demo_endis").colorpicker('disable');
+                });
+
+                $(".enable-button").click(function(e) {
+                  e.preventDefault();
+                  $("#demo_endis").colorpicker('enable');
+                });
+                //改变背景色
+                var divStyle = $('.back-change')[0].style;
+                $('#demo_apidemo').colorpicker({
+                    color: divStyle.backgroundColor
+                }).on('changeColor', function(ev) {
+                    divStyle.backgroundColor = ev.color.toHex();
+                });
+                $('.clockpicker').clockpicker();
+            }
+            createColorpickers();
+
+            // Create / destroy instances
+            $('.demo-destroy').click(function(e) {
+                e.preventDefault();
+                $('.demo').colorpicker('destroy');
+                $(".disable-button, .enable-button").off('click');
+            });
+
+            $('.demo-create').click(function(e) {
+                e.preventDefault();
+                createColorpickers();
+            });
+
+            
+
+            $('input[name="daterange"]').daterangepicker();
+
+            $('#reportrange span').html(moment().subtract(29, 'days').format('YYYY-MM-DD') + ' - ' + moment().format('YYYY-MM-DD'));
+
+            $('#reportrange').daterangepicker({
+                format: 'YYYY-MM-DD',
+                startDate: moment().subtract(29, 'days'),
+                endDate: moment(),
+                minDate: '2012-10-01',
+                maxDate: '2015-12-31',
+                dateLimit: { days: 60 },
+                showDropdowns: true,
+                showWeekNumbers: true,
+                timePicker: false,
+                timePickerIncrement: 1,
+                timePicker12Hour: true,
+                ranges: {
+                    '今天': [moment(), moment()],
+                    '昨天': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    '七天前': [moment().subtract(6, 'days'), moment()],
+                    '30天前': [moment().subtract(29, 'days'), moment()],
+                    '当前月': [moment().startOf('month'), moment().endOf('month')],
+                    '上个月': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                opens: 'right',
+                drops: 'down',
+                buttonClasses: ['btn', 'btn-sm'],
+                applyClass: 'btn-primary',
+                cancelClass: 'btn-default',
+                separator: ' to ',
+                locale: {
+                    applyLabel: '提交',
+                    cancelLabel: '取消',
+                    fromLabel: '从',
+                    toLabel: '到',
+                    customRangeLabel: '当前',
+                    daysOfWeek: ['日', '一', '二', '三', '四', '五','六'],
+                    monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+                    firstDay: 1
+                }
+            }, function(start, end, label) {
+                console.log(start.toISOString(), end.toISOString(), label);
+                $('#reportrange span').html(start.format('YYYY-MM-DD') + ' - ' + end.format('YYYY-MM-DD'));
+            });
+
+
+        });
+        var config = {
+                '.chosen-select'           : {},
+                '.chosen-select-deselect'  : {allow_single_deselect:true},
+                '.chosen-select-no-single' : {disable_search_threshold:10},
+                '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+                '.chosen-select-width'     : {width:"95%"}
+                }
+            for (var selector in config) {
+                $(selector).chosen(config[selector]);
+            }
+
+        $("#ionrange_1").ionRangeSlider({
+            min: 0,
+            max: 5000,
+            type: 'double',
+            prefix: "￥",
+            maxPostfix: "+",
+            prettify: false,
+            hasGrid: true
+        });
+
+        $("#ionrange_2").ionRangeSlider({
+            min: 0,
+            max: 10,
+            type: 'single',
+            step: 0.1,
+            postfix: " 克",
+            prettify: false,
+            hasGrid: true
+        });
+
+        $("#ionrange_3").ionRangeSlider({
+            min: -50,
+            max: 50,
+            from: 0,
+            postfix: "℃",
+            prettify: false,
+            hasGrid: true
+        });
+
+        $("#ionrange_4").ionRangeSlider({
+            values: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            type: 'single',
+            hasGrid: true
+        });
+
+        $("#ionrange_5").ionRangeSlider({
+            min: 10000,
+            max: 100000,
+            step: 100,
+            postfix: " km",
+            from: 55000,
+            hideMinMax: true,
+            hideFromTo: false
+        });
+
+        $(".dial").knob();
+
+        $("#basic_slider").noUiSlider({
+            start: 40,
+            behaviour: 'tap',
+            connect: 'upper',
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        });
+
+        $("#range_slider").noUiSlider({
+            start: [ 40, 60 ],
+            behaviour: 'drag',
+            connect: true,
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        });
+
+        $("#drag-fixed").noUiSlider({
+            start: [ 40, 60 ],
+            behaviour: 'drag-fixed',
+            connect: true,
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>

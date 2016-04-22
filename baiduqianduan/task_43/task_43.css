@@ -1,0 +1,172 @@
+.image-container{
+	width: 600px;
+    height: 350px;
+    border: 1px solid #EEEEEE;
+    margin: auto;
+}
+.image{
+	position: relative;
+	cursor: pointer;
+}
+.image img{
+	width: 99.9%;
+	height: 100%;
+	border: 1px solid #EEEEEE;
+	position: relative;
+}
+.image span{
+	position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    display: block;
+    width: 39px!important;
+    height:27px !important;
+    text-align: center;
+}
+
+.images{
+	width: 100%;
+	height: 100%;
+}
+
+/*一张照片*/
+.image_one .image, .image_one img{
+	width: 100%;
+	height: 100%;
+}
+
+/*二张照片*/
+.image_two{
+	position: relative;
+}
+.image_two div:nth-child(1){
+	width: 100%;
+	height: 100%;
+	float: left;
+	z-index: 80;
+}
+.image_two div:nth-child(2){
+	width: 100%;
+	height: 100%;
+	float: right;
+	position:absolute;
+	-webkit-clip-path: polygon(64% 0, 100% 0, 100% 83%, 0% 200%);
+	z-index: 100;
+	right: 0px;
+}
+
+/*三张照片*/
+.image_three div:nth-child(1){
+	width: 65%;
+	height: 100%;
+	float: left;
+}
+.image_three div:nth-child(2){
+	width: 35%;
+	height: 50%;
+	float: left;
+}
+.image_three div:nth-child(3){
+	width: 35%;
+	height: 50%;
+	float: left;
+}
+/*四张照片*/
+.image_four div{
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+/*五张照片*/
+.image_five div:nth-child(1){
+	width: 66.7%;
+	height: 66.7%;
+	float: left;
+}
+.image_five div:nth-child(2){
+	width: 33.3%;
+	height: 50%;
+	float: right;
+}
+.image_five div:nth-child(3){
+	width: 33.3%;
+	height: 50%;
+	float: right;
+}
+.image_five div:nth-child(4){
+	width: 33.3%;
+	height: 33.3%;
+	float: left;
+}
+.image_five div:nth-child(5){
+	width: 33.3%;
+	height: 33.3%;
+	float: left;
+}
+/*六张照片*/
+.image_six div:nth-child(1){
+	width: 66.7%;
+	height: 66.7%;
+	float: left;
+}
+.image_six div:nth-child(2){
+	width: 33.3%;
+	height: 33.3%;
+	float: left;
+}
+.image_six div:nth-child(3){
+	width: 33.3%;
+	height: 33.3%;
+	float: left;
+}
+.image_six div:nth-child(4){
+	width: 33.3%;
+	height: 33.3%;
+	float: right;
+}
+.image_six div:nth-child(5){
+	width: 33.3%;
+	height: 33.3%;
+	float: right;
+}
+.image_six div:nth-child(6){
+	width: 33.3%;
+	height: 33.3%;
+	float: right;
+}
+
+.selectedimage{
+	position: fixed!important;
+	left:0px!important;
+	top:0px!important;
+	z-index: 999!important;
+}
+
+.addimage{
+    width: 200px;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.addimage select{
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    margin: auto;
+    float: left;
+}
+.addimage span{
+	text-align: center;
+    width: 80px;
+    border-radius: 4px;
+    background-color: #9DE094;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    float: left;
+}

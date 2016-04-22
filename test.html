@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            RunJS 演示代码
+        </title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #wrap {
+                margin:auto;
+                width: 300px;
+            }
+            #wrap input[type=text]{
+                width:30px;
+                height:20px;
+                float:left;
+                text-align:center;
+            }
+        </style>
+        <script>
+            onload = function(){
+                var txts = wrap.getElementsByTagName("input");
+                for(var i = 0; i<txts.length;i++){
+                    var t = txts[i];
+                    t.index = i;
+                    t.setAttribute("readonly", true);
+                    t.onkeyup=function(){
+                        this.value=this.value.replace(/^(.).*$/,'$1');
+                        var next = this.index + 1;
+                        if(next > txts.length - 1) return;
+                        txts[next].removeAttribute("readonly");
+                        txts[next].focus();
+                    }
+                }
+                txts[0].removeAttribute("readonly");
+            }
+        </script>
+  </head>
+    <body>
+    <div id="wrap">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+        </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+.wrap{ width:1190px; margin:0 auto;}
+.page-title{ font-size:22px; border-bottom:1px solid #ddd; margin-top:0px; color:#078ccf; padding-bottom:10px;}
+.tooltip-inner {max-width:350px; text-align:left;}
+.table td{word-break: break-all;}
+
+/*管理中心左边菜单*/
+.left-menu{ background:#fff; padding:10px; width:190px;}
+.item-menu{ margin-bottom:15px;}
+.item-menu .item-title{ background:#f5f5f5; border-radius:3px; display:block; height:40px; line-height:40px; font-size:18px; color:#333; position:relative; cursor:pointer; margin-bottom:8px;transition:all 0.2s ease-out 0s;}
+.item-menu .itemlist a{ display:block; font-size:16px; height:35px; line-height:35px; text-indent:35px; }
+.item-menu .item-title .title-icon{ background:url(../images/managesprite.png) no-repeat 0 -44px; display:inline-block; width:12px; height:7px; position:absolute; top:17px; right:15px;}
+.item-menu .item-title .title-icon-up{ background-position: -12px -44px; width:7px; height:12px; top:15px;}
+.item-menu .select-title .title-icon{ background-position: 0 -51px;}
+.item-menu .select-title .title-icon-up{ background-position: -12px -56px; width:7px; height:12px; top:15px;}
+.item-menu .select-title{ background:#078ccf; color:#fff;}
+.item-menu .item-title:hover{ color:#078ccf;}
+.item-menu .select-title:hover{ color:#fff;}
+.item-menu .item-title i{ background:url(../images/managesprite.png) no-repeat;display: inline-block;vertical-align:middle;margin:-4px 5px 0 8px;width:20px; height:20px;}
+
+.item-menu .title01 a{ display:block;}
+.item-menu .title01 i{ background-position: 0 0;}
+.item-menu .title01.select-title a{ color:#fff;}
+.item-menu .title02 i{ background-position: -40px 0;width:15px; height:20px; margin-left:13px;}
+.item-menu .title03 i{ background-position: -70px 0;}
+.item-menu .title04 i{ background-position: -110px 0; width:21px;margin-left:7px;}
+.item-menu .title05 i{ background-position: -152px 0;}
+.item-menu .title01.select-title i{background-position: -20px 0;}
+.item-menu .title02.select-title i{background-position: -55px 0;}
+.item-menu .title03.select-title i{background-position: -90px 0;}
+.item-menu .title04.select-title i{background-position: -131px 0;}
+.item-menu .title05.select-title i{background-position: -172px 0;}
+/*管理中心左边菜单 end*/
+
+/*管理中心右边内容*/
+.rightbox{ background:#fff; width:980px; padding:20px;min-height: 678px;}
+
+/*用户基本信息*/
+.user-info,.finance{ border-bottom:1px solid #f0f3f5; padding-bottom:20px;}
+.user-info-left{ width:108px;}
+.user-info-right{ width:817px;}
+.safety-pro span{ display:inline-block;}
+.safety-pro .progress{ width:160px; margin-bottom:0px; height:15px;vertical-align: middle;}
+.safety-pro .high-level{background-color: #1AB394; width:100%;}
+.safety-pro .middle-level{background-color: #F8AC59;width:60%;}
+.safety-pro .down-level{background-color: #ED5565;width:30%;}
+/*用户基本信息 end*/
+
+/*用户认证*/
+.authentication i{ display:inline-block; width:24px; height:24px;background:url(../images/managesprite.png) no-repeat;}
+.authentication .not-realname{background-position:-24px -20px;}
+.authentication .realname{background-position:0 -20px;}
+.authentication .not-phone-auth{background-position:-72px -20px;}
+.authentication .phone-auth{background-position:-48px -20px;}
+.authentication .not-mail-auth{background-position:-120px -20px;}
+.authentication .mail-auth{background-position:-96px -20px;}
+.authentication .not-loginpassword-auth{background-position:-168px -20px;}
+.authentication .loginpassword-auth{background-position:-144px -20px;}
+.authentication .not-question-auth{background-position:-216px -20px;}
+.authentication .question-auth{background-position:-192px -20px;}
+.authentication .not-weixin-auth{background-position:-264px -20px;}
+.authentication .weixin-auth{background-position:-240px -20px;}
+/*用户认证end*/
+
+/*我的投资和借款*/
+.nav-tabs > li > a{ font-weight:normal;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{color: #078ccf;}
+/*我的投资和借款 end*/
+
+.modal-mt{ margin-top:10%;}
+.dk-form .form-group .col-sm-3,.dk-form .form-group .col-sm-9{padding-right:0px;padding-left: 10px;}
+
+
+/*管理中心右边内容 end*/

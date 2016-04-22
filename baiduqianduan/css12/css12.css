@@ -1,0 +1,107 @@
+/*table样式*/
+.css-12-table{
+	font-size: 13px;
+}
+.css-12-table thead{
+	background-color: #000;
+    color: #FFF;
+}
+.css-12-table tbody tr:nth-child(-n+3){
+	color:red;
+}
+.css-12-table tbody tr:nth-child(2n){
+	background-color: #CACACA;
+}
+
+/*输入框样式*/
+.css-12-input {
+	position: relative;
+    top: 32px;
+    width: 100px;
+	transition: width 2s;
+}
+.css-12-input:focus{
+	position: relative;
+    top: 32px;
+    width: 200px;
+	transition: width 2s;
+}
+
+/*banner样式*/
+.css-12-banner{
+	width: 250px;
+    height: 100px;
+    border: 1px solid #000;
+    position: relative;
+    top: 60px;
+	overflow: hidden;
+}
+.css-12-banner div{
+	position: absolute;
+    float: right;
+    list-style: none;
+    padding: 0px;
+    bottom: 2px;
+    right: 0px;
+}
+.css-12-banner div a{
+	display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    margin: 0px 3px 0px 3px;
+    text-align: center;
+	text-decoration:none;
+	background-color: #FFF;
+    opacity: 0.5;
+}
+.container{
+	width: 300%;
+	height: 100%;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+	position: relative;
+	left: 0px;
+	animation-fill-mode:both;
+	animation: ulbanner 12s linear  infinite;
+}
+.container li{
+	width: 250px;
+    height: 100px;
+    float: left;
+}
+@keyframes ulbanner{
+0% {left: 0;}
+31% {left: 0;}
+36% {left: -100%;}
+66% {left: -100%;}
+71% {left: -200%;}
+94% {left: -200%;}
+100% {left: 0;}
+}
+.container li:nth-child(1){
+	background-color: #6a619e;
+}
+
+.container li:nth-child(2){
+	background-color: #0f0;
+}
+
+.container li:nth-child(3){
+	background-color: #00f;
+}
+
+#one:target~ .container{
+    left: 0;
+	transition: left 1s;
+}
+#two:target~ .container{
+    left: -100%;
+	transition: left 1s;
+}
+#three:target~ .container{
+    left: -200%;
+	transition: left 1s;
+}
