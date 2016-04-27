@@ -1,0 +1,252 @@
+/*无下划线a标签*/
+a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:none;}a:hover{text-decoration:none;}a:active{text-decoration:none;}
+
+.hpage{
+	background: url('../img/hpagebgm.png');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	background-attachment:fixed
+}
+
+/*首页头部样式*/
+.htitle{
+	background: url('../img/htitlebgm.jpg');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	min-height: 300px;
+}
+.logo-row{
+	width: 75%;
+	margin: auto;
+	padding: 60px 0px 70px 0px;
+}
+.logo-row a{
+	color: #FFFFFF;
+}
+#select-toggle{
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	.logo-row{
+		width: 100%;
+		margin: auto;
+		padding: 35px 0px 20px 0px;
+	}
+	.htitle{
+		min-height: 150px;
+	}
+	.htitle a h1{
+	    font-size: 20px;
+	}
+	.htitle a h4{
+	    font-size: 10px;
+	}
+	#select-toggle{
+	    display: block;
+	    background-color: #000;
+	    color: #FFF;
+	    position: absolute;
+	    width: 30px;
+	    height: 20px;
+	    padding-top: 4px;
+	    right: 15px;
+	    top: 15px;
+	    text-align: center;
+	    font: 2em/.5 Raleway;
+	    border-radius: 5px;
+	}
+}
+/*页面头部导航*/
+.hcontainer{
+	width: 75%;
+	margin: auto;
+}
+.daohang{
+	height: 0px;
+}
+.daohang ul{
+	position: relative;
+	z-index: 50;
+	top: -50px;
+	background-color: #383535;
+	height: auto;
+}
+.daohang li{
+	height: 65px;
+	line-height: 65px;
+	color: #FFFFFF;
+}
+.daohang li a:hover{
+	background-color: #e77e23;
+}
+.daohang li a{
+	color: #FFFFFF;
+	border-radius:0px;
+	padding: 0px 35px 0px 35px;
+}
+@media only screen and (max-width: 768px) {
+	.hcontainer{
+		width: 100%;
+		margin: auto;
+	}
+	.daohang{
+		position: fixed;
+		width: 100%;
+    	z-index: 100;
+    	top: 200px;
+    	display: none;
+	}
+	.daohang li{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		height: 45px;
+		line-height: 45px;
+	}
+	.daohang li a{
+		padding: 0px 35px 0px 35px;
+	}
+}
+
+/*主要内容*/
+.left-con{
+    margin: -65px 0px 25px 0px;
+    width: 70%;
+    border-right: 1px solid #eee;
+    padding: 30px;
+}
+.con-text{
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 15px;
+}
+.right-con{
+	width: 29%;
+    font-size: 12px;
+    margin: -60px 0px 25px 0px;
+	padding: 30px;
+	float: right;
+}
+.overview{
+	background-color: #FFFFFF;
+	margin-bottom: 50px;
+}
+.title-right{
+	font-size: 20px;
+    border-bottom: 3px solid #F9C819;
+    padding-bottom: 1px;
+}
+.module-right{
+    float: left;
+	margin: 20px 0 10px;
+    width: 100%;
+}
+.module-right p{
+    margin: 10px 0 10px;
+}
+.select{
+	font-size: 17px;
+    display: block;
+    width: 100%;
+}
+#selectinput{
+	float: left;
+}
+.goselect{
+	display: block;
+    float: left;
+    width: 44px;
+    background-color: #337AB7;
+    height: 23px;
+    line-height: 23px;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0px 0px 0px 23px;
+}
+.module-right div{
+	min-height: 25px;
+}
+.tools a{
+    width: 100%;
+    display: block;
+    color: #7D7D7D;
+    margin: 9px 0px 0px 0px;
+}
+.commonlabel a{
+    display: block;
+    float: left;
+    width: 50%;
+    color: #7D7D7D;
+    margin: 9px 0px 0px 0px;
+}
+.newarticle a{
+	width: 100%;
+    display: block;
+    color: #7D7D7D;
+    margin: 9px 0px 0px 0px;
+}
+@media only screen and (max-width: 768px) {
+	.left-con{
+	    margin: -30px 0px 25px 0px;
+	    width: 100%;
+	    border-right: 1px solid #eee;
+	    padding: 30px;
+	    font-size: 12px;
+	}
+	.right-con{
+		width: 100%;
+	    font-size: 12px;
+	    margin: -30px 0px 25px 0px;
+		float: left;
+	}
+	.left-con h3{
+	    font-size: 18px;
+	}
+}
+/*分页样式*/
+#jqPaginator{
+    list-style: none;
+    padding: 0px;
+    margin-top: 14px;
+}
+#jqPaginator li{
+    float: left;
+    padding: 6px 15px 6px 15px;
+    border: 1px solid #EEE;
+    margin: 0px 2px 0px 2px;
+    cursor: pointer;
+}
+#jqPaginator li a{
+    color: #000000;
+}
+#jqPaginator li.active{
+    background-color: #337AB7;
+}
+#jqPaginator li.active a{
+    color: #FFF;
+}
+#jqPaginator li.disabled{
+    cursor: no-drop;
+}
+#jqPaginator li.disabled a{
+    cursor: no-drop;
+}
+@media only screen and (max-width: 768px) {
+	#jqPaginator li {
+	    float: left;
+	    padding: 1px 8px 1px 8px;
+	    border: 1px solid #EEE;
+	    margin: 0px;
+	}
+	body{
+	}
+}
+/*footer页尾*/
+.footer{
+	background-color: #000;
+    color: #fff;
+    height: 70px;
+    padding: 15px;
+}
