@@ -1,12 +1,17 @@
 (function(){
+var phone = false;
+if(document.body.offsetWidth < 768){
+	phone = true;
+}
+var selecttoggle = function(){
 	$('#select-toggle').click(function(){
 		$('.daohang').toggle();
 	});
-})()
+};
 
+/*分页*/
 var createPaginator = function(page, totalPages){
-	var width = document.body.offsetWidth;
-	if(width < 768){
+	if(phone){
 		$('#jqPaginator').jqPaginator({
 		    totalPages: totalPages,
 		    visiblePages: 1,
@@ -38,5 +43,28 @@ var createPaginator = function(page, totalPages){
 		});
 	}
 	
-}
-createPaginator(1,20);
+};
+
+/*导航*/
+(function(){
+	$('.daohang li').click(function(){
+		$('.daohang li').removeClass('active');
+		$(this).addClass('active');
+		if(phone){
+			$('#select-toggle').click();
+		}
+	});
+})();
+
+
+
+
+
+var init = function(){
+	selecttoggle();
+	createPaginator(1,20);
+};
+$(document).ready(init);
+})()
+
+
