@@ -5,7 +5,19 @@ if(document.body.offsetWidth < 768){
 }
 var selecttoggle = function(){
 	$('#select-toggle').click(function(){
-		$('.daohang').toggle();
+		console.log($('.daohang').css('display'));
+		if($('.daohang').css('display') == 'none'){
+			$('.daohang').show();
+			if(phone){
+				$('body').css('overflow', 'hidden');
+			}
+		}else{
+			$('.daohang').hide();
+			if(phone){
+				$('body').css('overflow', 'auto');
+			}
+		}
+		
 	});
 };
 
