@@ -51,7 +51,7 @@ var createPaginator = function(page, totalPages){
 		$('.daohang li').removeClass('active');
 		$(this).addClass('active');
 		if(phone){
-			$('#select-toggle').click();
+			$('#select-toggle').click(); 
 		}
 	});
 })();
