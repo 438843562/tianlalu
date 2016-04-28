@@ -110,11 +110,26 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
 
 /*主要内容*/
 .left-con{
-    margin: -65px 0px 25px 0px;
+    margin: -30px 0px 25px 0px;
     width: 70%;
     border-right: 1px solid #eee;
-    padding: 30px;
-    float: left; 
+    padding: 0px 30px 30px 30px;
+    float: left;
+}
+.article{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+}
+.article_title{
+	font-size: 24px;
+	display: block;
+    margin-top: 16px;
+}
+.article_container{
+	margin-top: 20px;
+}
+.article_link{
+	margin-top: 20px;
 }
 .con-text{
     border-bottom: 1px solid #EEE;
@@ -125,7 +140,10 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
     font-size: 12px;
     margin: -60px 0px 25px 0px;
 	padding: 30px;
-	float: right;
+	float: left;
+	border-left: 1px solid #eee;
+    position: relative;
+    left: -1px;
 }
 .overview{
 	background-color: #FFFFFF;
@@ -168,11 +186,13 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
 .module-right div{
 	min-height: 25px;
 }
+.tools div{
+    width: 100%;
+    margin: 9px 0px 0px 0px;
+}
 .tools a{
     width: 100%;
-    display: block;
     color: #7D7D7D;
-    margin: 9px 0px 0px 0px;
 }
 .commonlabel a{
     display: block;
@@ -181,11 +201,13 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
     color: #7D7D7D;
     margin: 9px 0px 0px 0px;
 }
-.newarticle a{
+.newarticle div{
 	width: 100%;
-    display: block;
-    color: #7D7D7D;
     margin: 9px 0px 0px 0px;
+}
+.newarticle a{
+    width: 100%;
+    color: #7D7D7D;
 }
 @media only screen and (max-width: 768px) {
 	.left-con{
@@ -200,6 +222,9 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
 	    font-size: 12px;
 	    margin: -30px 0px 25px 0px;
 		float: left;
+		border-left: 1px solid #eee;
+	    position: relative;
+	    left: 0px;
 	}
 	.left-con h3{
 	    font-size: 18px;
