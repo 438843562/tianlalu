@@ -29,12 +29,11 @@
       <file leaf-file-name="zroHtml.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zroHtml.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14631337" vertical-offset="405" max-vertical-offset="1349">
-              <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.39285713" vertical-offset="1369" max-vertical-offset="2394">
+              <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#article#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -383,12 +382,12 @@
       <created>1461939552367</created>
       <option name="number" value="Default" />
       <updated>1461939552367</updated>
-      <workItem from="1461939553532" duration="2745000" />
+      <workItem from="1461939553532" duration="3107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2745000" />
+    <option name="totallyTimeSpent" value="3107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -447,19 +446,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Image/美女.jpg">
+    <entry file="file://$PROJECT_DIR$/Image/girl.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zroHtml.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14631337" vertical-offset="405" max-vertical-offset="1349">
-          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.39285713" vertical-offset="1369" max-vertical-offset="2394">
+          <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
