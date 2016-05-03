@@ -282,3 +282,6 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
 .client child:nth-child(+1){
 	display: none;
 }
+.jiathis_txt{
+	display: none;
+}

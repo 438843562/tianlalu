@@ -90,13 +90,14 @@ var clienttype = function() {
 /*qq群和qq交谈类型选择*/
 var qq_check_type = function(){
 	var type = clienttype();
+	console.log(type);
 	$('.client').children('.child').hide();
 	$('.client .'+type).show();
 	switch (type){
 		case 'PC':
 			$.getScript('http://v3.jiathis.com/code/jia.js');
 			break;
-		case 'PC':
+		case 'iPhone':
 			$.getScript('http://v3.jiathis.com/code/jiathis_m.js');
 		break;
 		default:
