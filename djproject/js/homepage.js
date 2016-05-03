@@ -68,7 +68,41 @@ var createPaginator = function(page, totalPages){
 	});
 })();
 
+/*判断客服端类型*/
+var clienttype = function() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = 'PC';
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = Agents[v];
+            if(Agents[v] == 'Windows Phone'){
+        		flag = 'WindowsPhone';
+        	}
+            break;
+        }
+    }
+    return flag;
+}
+
+/*qq群和qq交谈类型选择*/
+var qq_check_type = function(){
+	var type = clienttype();
+	console.log(type);
+	if(type == 'PC'){
+		$('.client .PC').show();
+		$('.client .phone').hide();
+	}else{
+		$('.client .phone').show();
+		$('.client .PC').hide();
+	}
+};
+
+
 var init = function(){
+	qq_check_type();
 	selecttoggle();
 	createPaginator(1,20);
 };
