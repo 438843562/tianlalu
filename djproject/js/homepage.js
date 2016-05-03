@@ -90,14 +90,8 @@ var clienttype = function() {
 /*qq群和qq交谈类型选择*/
 var qq_check_type = function(){
 	var type = clienttype();
-	console.log(type);
-	if(type == 'PC'){
-		$('.client .PC').show();
-		$('.client .phone').hide();
-	}else{
-		$('.client .phone').show();
-		$('.client .PC').hide();
-	}
+	$('.client').children().hide();
+	$('.client .'+type).show();
 };
 
 
