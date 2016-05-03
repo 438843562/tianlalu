@@ -68,10 +68,6 @@ var createPaginator = function(page, totalPages){
 	});
 })();
 
-
-
-
-
 var init = function(){
 	selecttoggle();
 	createPaginator(1,20);
