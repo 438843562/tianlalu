@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文章管理</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<script src="jquery-2.1.1/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="ueditor/ueditor.config.js"></script>
+    	<script type="text/javascript" src="ueditor/ueditor.all.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="css/articlemanage.css"/>
+	</head>
+	<body>
+		<!--顶部导航-->
+		<div class="daohang-top">
+			
+		</div>
+		<!--右边导航-->
+		<div class="daohang-left">
+			<div id="daohang-list">
+				<ul>
+					<li class="active" name="menu-1"><span></span><span>主菜单1</span></li>
+					<li name="menu-2"><span></span><span>主菜单2</span></li>
+					<li name="menu-3"><span></span><span>主菜单3</span></li>
+					<li name="menu-4"><span></span><span>主菜单4</span></li>
+					<li name="menu-5"><span></span><span>主菜单5</span></li>
+				</ul>
+			</div>
+			<div id="sub-list">
+				<ul id="sub-menu-1">
+					<li>子菜单11</li>
+					<li>子菜单12</li>
+					<li>子菜单13</li>
+					<li>子菜单14</li>
+					<li>子菜单15</li>
+				</ul>
+				<ul id="sub-menu-2">
+					<li>子菜单21</li>
+					<li>子菜单22</li>
+					<li>子菜单23</li>
+					<li>子菜单24</li>
+					<li>子菜单25</li>
+				</ul>
+				<ul id="sub-menu-3">
+					<li>子菜单31</li>
+					<li>子菜单32</li>
+					<li>子菜单33</li>
+					<li>子菜单34</li>
+					<li>子菜单35</li>
+				</ul>
+				<ul id="sub-menu-4">
+					<li>子菜单41</li>
+					<li>子菜单42</li>
+					<li>子菜单43</li>
+					<li>子菜单44</li>
+					<li>子菜单45</li>
+				</ul>
+				<ul id="sub-menu-5">
+					<li>子菜单51</li>
+					<li>子菜单52</li>
+					<li>子菜单53</li>
+					<li>子菜单54</li>
+					<li>子菜单55</li>
+				</ul>
+			</div>
+			<div id="open-close">
+				<span>>></span>
+			</div>
+		</div>
+		
+		<!--控制台-->
+		<div class="form flowline">
+			<div id="line-top"></div>
+			<div id="line-right"></div>
+			<div id="line-bottom"></div>
+			<div id="line-left"></div>
+			
+			<div class="form-content">
+				<div><span>文章名：</span><input type="text" id="name" value=""/></div>
+				<div>
+					<span>文章类型：</span>
+					<select id="type">
+						<option value="1">php</option>
+						<option value="2">linux</option>
+						<option value="3">html</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="editer">
+			<div id="editer"></div>
+		</div>
+		
+		
+		
+		<script src="js/articlemanege.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

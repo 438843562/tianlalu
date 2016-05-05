@@ -271,6 +271,57 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
 	body{
 	}
 }
+/*打赏*/
+.dashang{
+	text-align: center;
+	width: 100%;
+    background-color: #eeeeee;
+    height: 70px;
+}
+.dashang span{
+	display: block;
+}
+.dashang span.shang{
+	height: 45px;
+    line-height: 45px;
+    font-size: 32px;
+    width: 45px;
+    margin: auto;
+    background-color: #FEC22C;
+    border-radius: 43px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.zhifuselect{
+	
+}
+.zhifuselect ul{
+	list-style: none;
+	margin: 0px;
+}
+.modal-content{
+	width: 300px!important;
+    height: 300px!important;
+    margin: auto!important;
+    margin-top: 200px!important;
+}
+.erweima{
+	text-align: center;
+}
+.erweima img{
+	width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.zhifuselect{
+    width: 100%;
+    text-align: center;
+}
+.zhifuselect span{
+	padding-top: 10px;
+    display: block;
+}
+
 /*footer页尾*/
 .footer{
 	background-color: #000;
@@ -285,3 +336,4 @@ a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:n
 .jiathis_txt{
 	display: none;
 }
+

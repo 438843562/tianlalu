@@ -106,7 +106,6 @@ var qq_check_type = function(){
 	
 };
 
-
 var init = function(){
 	qq_check_type();
 	selecttoggle();
