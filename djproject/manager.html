@@ -4,62 +4,70 @@
 		<meta charset="UTF-8">
 		<title>文章管理</title>
 		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>
 		<script src="jquery-2.1.1/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="ueditor/ueditor.config.js"></script>
     	<script type="text/javascript" src="ueditor/ueditor.all.min.js"></script>
+    	<script src="bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
     	<link rel="stylesheet" type="text/css" href="css/manager.css"/>
 	</head>
 	<body>
 		<!--顶部导航-->
 		<div class="daohang-top">
-			
+			<div id='login'>
+				<a href="#">登陆</a>
+				<span>|</span>
+				<a href="#">返回主页</a>
+				<span>|</span>
+				<a href="#">关于</a>
+			</div>			
+			<div id="daohang-list">
+				<ul>
+					<li class="active" name="menu-1">主菜单1</li>
+					<li name="menu-2">主菜单2</li>
+					<li name="menu-3">主菜单3</li>
+					<li name="menu-4">主菜单4</li>
+					<li name="menu-5">主菜单5</li>
+				</ul>
+			</div>
 		</div>
 		<!--右边导航-->
 		<div class="daohang-left">
-			<div id="daohang-list">
-				<ul>
-					<li class="active" name="menu-1"><span></span><span>主菜单1</span></li>
-					<li name="menu-2"><span></span><span>主菜单2</span></li>
-					<li name="menu-3"><span></span><span>主菜单3</span></li>
-					<li name="menu-4"><span></span><span>主菜单4</span></li>
-					<li name="menu-5"><span></span><span>主菜单5</span></li>
-				</ul>
-			</div>
 			<div id="sub-list">
 				<ul id="sub-menu-1">
-					<li>子菜单11</li>
-					<li>子菜单12</li>
-					<li>子菜单13</li>
-					<li>子菜单14</li>
-					<li>子菜单15</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单11</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单12</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单13</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单14</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单15</li>
 				</ul>
 				<ul id="sub-menu-2">
-					<li>子菜单21</li>
-					<li>子菜单22</li>
-					<li>子菜单23</li>
-					<li>子菜单24</li>
-					<li>子菜单25</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单21</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单22</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单23</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单24</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单25</li>
 				</ul>
 				<ul id="sub-menu-3">
-					<li>子菜单31</li>
-					<li>子菜单32</li>
-					<li>子菜单33</li>
-					<li>子菜单34</li>
-					<li>子菜单35</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单31</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单32</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单33</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单34</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单35</li>
 				</ul>
 				<ul id="sub-menu-4">
-					<li>子菜单41</li>
-					<li>子菜单42</li>
-					<li>子菜单43</li>
-					<li>子菜单44</li>
-					<li>子菜单45</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单41</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单42</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单43</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单44</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单45</li>
 				</ul>
 				<ul id="sub-menu-5">
-					<li>子菜单51</li>
-					<li>子菜单52</li>
-					<li>子菜单53</li>
-					<li>子菜单54</li>
-					<li>子菜单55</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单51</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单52</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单53</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单54</li>
+					<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i>子菜单55</li>
 				</ul>
 			</div>
 			<div id="open-close">
@@ -69,6 +77,7 @@
 		
 		<!--控制台-->
 		<div class="console">
+				<iframe frameborder="0" src="http://127.0.0.1:8020/UE/djproject/articlemanage.html" scrolling="yes"></iframe>
 		</div>
 		<script src="js/manager.js" type="text/javascript" charset="utf-8"></script>
 	</body>

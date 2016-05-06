@@ -1,5 +1,5 @@
 (function(){
-/*右边导航栏*/
+/*导航栏*/
 var daohang_left = function(){
 	$('#daohang-list').on('click', 'li', function(){
 		$('#daohang-list li').removeClass('active');
@@ -8,15 +8,19 @@ var daohang_left = function(){
 		$('#sub-list ul').hide();
 		$('#'+subid).show();
 	});
+	$('.daohang-left #sub-list').on('click', 'li', function(){
+		$('.daohang-left #sub-list li').removeClass('active');
+		$(this).addClass('active');
+	});
 	$('#open-close').click(function(){
 		var leftoffset = $('.daohang-left').css('left');
 		if(leftoffset == '0px'){
 			$('#open-close span').html('>>');
-			$('.daohang-left').animate({left:'-200px'}, 500, 'linear');
+			$('.daohang-left').animate({left:'-149px'}, 500, 'linear');
 			$('.console').animate({'margin-left':'30px'}, 500, 'linear');
 		}else{
 			$('#open-close span').html('<<');
-			$('.console').animate({'margin-left':'230px'}, 500, 'linear');
+			$('.console').animate({'margin-left':'179px'}, 500, 'linear');
 			$('.daohang-left').animate({left:'0px'}, 500, 'linear');
 		}
 	});

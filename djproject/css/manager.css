@@ -2,24 +2,63 @@ body {
     margin: 0px;
     background-color: #EEEEEE;
 }
+a{text-decoration:none;}a:link{text-decoration:none;}a:visited{text-decoration:none;}a:hover{text-decoration:none;}a:active{text-decoration:none;}
+
 /*顶部导航*/
 .daohang-top {
 	width: 100%;
 	height: 110px;
-	background: url('../img/htitlebgm.jpg');
+	background: url('../img/btitlebgm.jpg');
 	background-repeat:no-repeat;
 	background-size: 100% 100%;
 	background-attachment:fixed;
 }
+#login{
+    text-align: right;
+    padding-right: 35px;
+}
+#login span{
+	color: #ffffff;
+}
+#login a{
+	color: #ffffff;
+}
+.daohang-top #daohang-list{
+    width: 100%;
+    position: relative;
+    bottom: -57px;
+    float: left;
+}
+.daohang-top #daohang-list ul{
+    list-style: none;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+.daohang-top #daohang-list ul li{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 0px 3px 0px 3px;
+    margin: 0px 4px 0px 4px;
+}
+.daohang-top #daohang-list ul li.active,.daohang-top #daohang-list ul li:hover{
+    border: 1px solid #FFF;
+    margin: 0px 3px 0px 3px;
+}
 
 /*左边导航*/
 .daohang-left{
-    width: 230px;
-    min-height: 663px;
-    background-color: #FFFFFF;
+    width: 180px;
+    min-height: 665px;
+    background-color: #353232;
     float: left;
     position: relative;
     left: 0px;
+    margin-left: -1px;
 }
 .daohang-left #open-close{
     width: 29px;
@@ -30,15 +69,12 @@ body {
 .daohang-left #open-close span{
     position: relative;
     left: 0px;
+    color: #FFFFFF;
 }
-.daohang-left #daohang-list{
-	width: 95px;
-    height: 663px;
-    float: left;
-}
+
 .daohang-left #sub-list{
-	width:95px;
-    height: 663px;
+	width:140px;
+    height: 665px;
     float: left;
     border-left: 1px solid #eee;
     padding-left: 10px;
@@ -48,47 +84,42 @@ body {
     padding: 0px;
     margin: 0px;
 }
-.daohang-left #daohang-list ul li span{
-    float:left;
-}
-.daohang-left #daohang-list ul li span:nth-child(1){
-    width: 10px;
-    height: 100%;
-    background-color: #789CC7;
-    border-right: 3px solid #A0DED3;
-    margin-right: 5px;
-    display: none;
-}
-.daohang-left #daohang-list .active span:nth-child(1){
-	display: block;
-}
-.daohang-left #daohang-list li:hover span:nth-child(1){
-	display: block;
-}
-.daohang-left #daohang-list ul li span:nth-child(2){
-    margin-left: 5px;
-    cursor: pointer;
-}
-.daohang-left #daohang-list ul li{
-    display: block;
-    height: 35px;
-    line-height: 35px;
-}
 .daohang-left #sub-list ul li{
     display: block;
     height: 35px;
     line-height: 35px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 2px;
 }
 .daohang-left #sub-list ul{
 	display: none;
+    margin-top: 6px;
 }
 .daohang-left #sub-list #sub-menu-1{
 	display: block;
 }
+.daohang-left #sub-list i{
+	display: block;
+	float: left;
+    height: 35px;
+    width: 19px;
+    line-height: 31px;
+}
+.daohang-left #sub-list li.active i,.daohang-left #sub-list li:hover i{
+	color:#847F7F;
+}
+
 
 /*控制台*/
 .console{
-    height: 663px;
-    margin-left: 230px;
+    height: 665px;
+    margin-left: 179px;
     border: 1px solid #A5EA97;
+    position: relative;
 }
+.console iframe{
+	height: 658px;
+	width: 100%;
+}
+
