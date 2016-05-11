@@ -13,7 +13,7 @@ var navbartype = function(){
 		if($('.wrapper').hasClass('mini-navbar')){
 			$('.wrapper').removeClass('mini-navbar');
 			$('.navbar-left').css('opacity', '0');
-			$('.navbar-left').delay(300).animate({opacity:'1'}, 700);
+			$('.navbar-left').delay(100).animate({opacity:'1'}, 200);
 		}else{
 			$('.wrapper').addClass('mini-navbar');
 		}
@@ -22,7 +22,7 @@ var navbartype = function(){
 /*导航选择*/
 var navmetismenu = function(){
 	$('.nav-list').click(function(e){
-		if(e.target && $(e.target).hasClass('nav-list')){
+		if(e.target && ($(e.target).hasClass('nav-list') || $(e.target).hasClass('glyphicon') || $(e.target).hasClass('nav-label'))){
 			if($(this).hasClass('active')){
 				$(this).removeClass('active');
 				$(this).find('.glyphicon-img').removeClass('glyphicon-chevron-down');
@@ -48,7 +48,14 @@ var navmetismenuinit = function(){
 		}
 	});
 }
-	
+/*选择页面更改页面主题信息*/
+var changepageinfo = function(){
+	$('.nav-list li a').click(function(){
+		var text = $(this).text();
+		$('.nav-page label').text(text);
+		$($('.nav-page span')[2]).text(text);
+	});
+}
 	
 	
 	
@@ -67,6 +74,7 @@ function init(){
 	navbartype();
 	navmetismenu();
 	navmetismenuinit();
+	changepageinfo();
 };
 $(document).ready(init);
 })(document,window)

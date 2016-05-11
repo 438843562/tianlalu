@@ -1,10 +1,10 @@
 (function(){
-//var ue = UE.getEditor('editer', {
-//	
-//	initialFrameHeight:400,
-//	enableAutoSave:false,
-//	autoHeightEnabled:false,
-//});
+var ue = UE.getEditor('editer', {
+	initialFrameHeight:460,
+	enableAutoSave:false,
+	autoHeightEnabled:false,
+	enableAutoSave:false,
+});
 
 /*边框动画*/
 var border_animate = function(){
@@ -38,14 +38,42 @@ var border_animate = function(){
 	};
 	
 	
-	fun_top();
-	fun_bottom();
-	fun_left();
-	fun_right();
+	//fun_top();
+	//fun_bottom();
+	//fun_left();
+	//fun_right();
 };
-	
+
+/*获取get参数值*/
+function getArgs() {
+    var args = {};
+        var query = location.search.substring(1);
+    var pairs = query.split("&");
+    for(var i = 0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');
+        if (pos == -1) continue;
+            var argname = pairs[i].substring(0,pos);
+            var value = pairs[i].substring(pos+1);
+            value = decodeURIComponent(value);
+            args[argname] = value;
+        }
+    return args;
+ }
+
+/*页面类型初始化*/
+var pagetype = function(){
+	var type = getArgs().type;
+	if(type && type == 'add'){
+		$('#save').hide();
+	}else if(type && type == 'save'){
+		$('#add').hide();
+	}
+}
+
+
 var init = function(){
 	border_animate();
+	pagetype();
 };
 $(document).ready(init);
 })()

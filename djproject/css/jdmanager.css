@@ -9,7 +9,6 @@ ul{
 	padding: 0px;
 }
 .nav-metismenu li.nav-list{
-	padding-left:20px;
     min-height: 45px;
     line-height: 45px;
     display: block;
@@ -19,10 +18,13 @@ ul{
 }
 .nav-metismenu li.nav-list li{
 	cursor: pointer;
-	padding-left: 30px;
 }
 .nav-metismenu li.nav-list li a{
 	color: #EEEEEE;
+    padding-left: 50px;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 .nav-metismenu li.nav-list ul{
 	display: none;
@@ -39,7 +41,10 @@ ul{
 .nav-metismenu li.nav-list li:hover a{
 	color: #ffffff;
 }
-.nav-metismenu li.nav-list:hover{
+.nav-metismenu li.nav-list li:hover{
+	background-color: #5D5D5D;
+}
+.nav-metismenu li.nav-list:hover,.nav-metismenu li.active{
 	background-color: #232121;
 }
 .nav-metismenu li.nav-list span{
@@ -58,6 +63,7 @@ ul{
 }
 .nav-metismenu li.nav-list i.glyphicon{
     color: #AFAFAF;
+    padding-left: 20px;
 }
 .nav-header{
     height: 135px;
@@ -114,7 +120,7 @@ ul{
     width: 230px;
     height: 100%;
     float: left;
-    transition: width 1s;
+    transition: width 0.3s;
 }
 .mini-navbar .navbar-left{
 	width: 70px;
@@ -123,7 +129,7 @@ ul{
 	background-color: #EEEEEE;
     margin-left: 230px;
     min-width: 800px;
-    transition: margin-left 1s;
+    transition: margin-left 0.3s;
 }
 .mini-navbar #page-wrapper{
 	margin-left: 70px;
@@ -156,7 +162,8 @@ ul{
 }
 #page-wrapper .nav-content .content{
 	background-color: #FFFFFF;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     border-top: 3px solid #CACACA;
 }
 .navbar-type{
@@ -188,4 +195,8 @@ ul{
 }
 .outsight span{
     margin-right: 5px;
+}
+.iframe{
+	width: 100%;
+	height: 100%;
 }

@@ -23919,7 +23919,10 @@ UE.plugin.register('autosave', function (){
             },
 
             'contentchange': function () {
-
+				if(!me.options.enableAutoSave){
+                    return;
+                }
+				
                 if ( !saveKey ) {
                     return;
                 }

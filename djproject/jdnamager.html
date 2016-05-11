@@ -54,7 +54,7 @@
 						</a>
 						<ul>
 							<li><a href="#">文章列表</a></li>
-							<li><a href="#">添加文章</a></li>
+							<li><a href="http://127.0.0.1:8020/UE/djproject/articlemanage.html" target="namegerIfame">添加文章</a></li>
 							<li><a href="#">修改文章</a></li>
 						</ul>
 					</li>
@@ -62,7 +62,7 @@
 						<a href="#">
 							<i class="glyphicon glyphicon-lamp"></i>
 							<span class="nav-label">其他</span>
-							<span class="glyphicon-img sglyphicon glyphicon-chevron-right"></span>
+							<span class="glyphicon-img glyphicon glyphicon-chevron-right"></span>
 						</a>
 					</li>
 				</ul>
@@ -79,8 +79,16 @@
 				</div>
 				<div class="nav-content">
 					<div class="content">
-						
-						
+						<script>
+							var iheight = function(){
+								var ifm= document.getElementById("namegerIfame");
+								var subWeb = document.frames ? document.frames["namegerIfame"].document : ifm.contentDocument;
+								if(ifm != null && subWeb != null) {
+									$('#namegerIfame').css('height', subWeb.body.scrollHeight+'px');
+								}
+							}
+						</script>
+						<iframe class="iframe" id="namegerIfame" name="namegerIfame" frameborder="0" onLoad="iheight()"></iframe>
 					</div>
 				</div>
 			</div>
