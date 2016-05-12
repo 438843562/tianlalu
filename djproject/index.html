@@ -14,7 +14,14 @@
 	<body>
 		<div class="container-fluid hpage">
 			<div class="row htitle">
-				<span id="select-toggle">-</span>
+				<div class="row">
+					<div class="user-info">
+						<span id="landing" data-toggle="modal" data-target="#myModal">登陆</span>
+						<span class="fenge">|</span>
+						<span id="user-name">d2050838808</span>
+					</div>
+					<span id="select-toggle">-</span>
+				</div>
 				<div class="row logo-row">
 					<div class="col-xs-12 col-md-8">
 						<a href="#">
@@ -167,6 +174,50 @@
 				<span>web交流网站|QQ群：1234567</span>
 			</div>
 		</div>
+		
+		<!--登陆注册弹出层开始-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="pages backpage1"></div>
+				<div class="pages backpage2"></div>
+				<div class="pages pagecontent">
+					<div class="insight">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<div id="title">
+							<span class="left-title"></span>
+							<span>账号登陆</span>
+							<span class="right-title"></span>
+						</div>
+						<div>
+							<div class="row-input"><span class="input-img glyphicon glyphicon-user"></span><input type="text" id="userid" placeholder="输入用户名"/></div>
+							<div class="row-input"><span class="input-img glyphicon glyphicon-lock"></span><input type="password" id="password" placeholder="输入密码"/></div>
+						</div>
+						<div class="fottor">
+							<span class="btn btn-default" id="goloading">登陆</span>
+							<span class="btn btn-default" id='zhuce'>注册</span>
+						</div>
+					</div>
+					<div class="registered">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<div id="title">
+							<span class="left-title"></span>
+							<span>账号注册</span>
+							<span class="right-title"></span>
+						</div>
+						<div>
+							<div class="row-input"><span class="input-img glyphicon glyphicon-user"></span><input type="text" id="userid" placeholder="输入用户名"/></div>
+							<div class="row-input"><span class="input-img glyphicon glyphicon-lock"></span><input type="password" id="password"/ placeholder="输入密码"></div>
+							<div class="row-input"><span class="input-img glyphicon glyphicon-lock"></span><input type="password" id="password"/ placeholder="再次输入密码"></div>
+						</div>
+						<div class="fottor">
+							<span class="btn btn-default">注册</span>
+							<span class="btn btn-default" id="reload">返回登陆</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登陆注册弹出层结束-->
 		<script src="js/homepage.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

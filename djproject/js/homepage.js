@@ -105,11 +105,34 @@ var qq_check_type = function(){
 	}
 	
 };
+/*注册按钮*/
+var registered = function(){
+	$('#zhuce').click(function(){
+		$('.registered').animate({
+			left:'0px',
+			top:'0px',
+			opacity:'1',
+		},300);
+	});
+	
+	$('#reload').click(function(){
+		$('.registered').animate({
+			left:'350px',
+			top:'-100px',
+			opacity:'0',
+		},300);
+	});
+	
+	$('.colse').click(function(){
+		$('#myModal').css('display','none');
+	});
+}
 
 var init = function(){
 	qq_check_type();
 	selecttoggle();
 	createPaginator(1,20);
+	registered();
 };
 $(document).ready(init);
 })()

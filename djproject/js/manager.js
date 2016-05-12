@@ -53,7 +53,6 @@ var init = function(){
 	daohang_left();
 	open_close();
 	$('#daohang-list li').first().click();
-	
 };
 $(document).ready(init);
 })()
